@@ -16,12 +16,12 @@
     <pre><code>#container_id{display:grid;}</code></pre>
     <p>and to define the grid <b>columns & rows</b>, we must input the properties <b>grid-templet-columns</b> & <b>grid-template-rows</b> with values:<ul><li>fixed (px)</li><li>or relative (% em rem vh vw vmax vmin)</li><li>or fractions (fr) frome left spaces</li><li>or shrink (auto) to its original content size</li></ul> and we can repeat them by the function: <ul><li>repeat(<kbd>times or auto-fill or auto-fit, value</kbd>)</li></ul> also we can give the values range by the function:<ul><li>min-max(<kbd>minimum Value, maximum Value</kbd>)</li></ul>Example:</p>
     <pre><code>#container_id{
-  grid-template-columns:auto repeat(auto-fit,minmax(60px,2fr) 3fr);
+  grid-template-columns:auto repeat(auto-fit,minmax(60px,2fr)) 3fr;
   grid-template-rows:repeat(auto-fill,minmax(auto, 20%)) 7%;
 }</code></pre>
     <p>and for shorthand we can use just the property <b>grid-template</b>, with value of "<kbd>rows values <b>/</b> columns vakues</kbd>"<br>Example:</p>
     <pre><code>#container_id{
-  grid-template:auto repeat(auto-fit,minmax(60px,2fr) 3fr) / repeat(auto-fill,minmax(auto, 20%)) 7%;
+  grid-template:auto repeat(auto-fit,minmax(60px,2fr)) 3fr / repeat(auto-fill,minmax(auto, 20%)) 7%;
 }</code></pre>
   </section>
   
