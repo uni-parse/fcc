@@ -1,0 +1,38 @@
+:root {
+}
+body {
+  font-family: rosemary, monospace;
+  background: url("https://drive.google.com/thumbnail?id=1Rc3mKsAEhdIuR9pGTProJB1rTqsNruN3");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: lightgray;
+  text-align: center;
+}
+header {
+}
+main {
+  background: linear-gradient(
+    -45deg,
+    rgba(10, 190, 250, 1),
+    rgba(0, 0, 0, 0.7),
+    rgba(210, 0, 250, 1)
+  );
+  border-radius: 10%;
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 95vh;
+}
+form {
+}
+fieldset {
+  border: dashed yellow 2px;
+  border-radius: 10%;
+  text-align: left;
+}
+section {
+  text-align: left;
+}

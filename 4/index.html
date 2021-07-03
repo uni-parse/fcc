@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+<main id="main-doc">
+
+  <section id="define_container" class="main-section">
+    <header>
+      <h2>define container</h2>
+    </header>
+    <p>to define grid <b>container</b>, we need to add <b>display</b> property with value of <b>grid</b> inside the css-rule<br>Example:</p>
+    <pre><code>#container_id{display:grid;}</code></pre>
+    <p>and to define the grid <b>columns & rows</b>, we must input the properties <b>grid-templet-columns</b> & <b>grid-template-rows</b> with values:<ul><li>fixed (px)</li><li>or relative (% em rem vh vw vmax vmin)</li><li>or fractions (fr) frome left spaces</li><li>or shrink (auto) to its original content size</li></ul> and we can repeat them by the function: <ul><li>repeat(<kbd>times or auto-fill or auto-fit, value</kbd>)</li></ul> also we can give the values range by the function:<ul><li>min-max(<kbd>minimum Value, maximum Value</kbd>)</li></ul>Example:</p>
+    <pre><code>#container_id{
+  grid-template-columns:auto repeat(auto-fit,minmax(60px,2fr) 3fr);
+  grid-template-rows:repeat(auto-fill,minmax(auto, 20%)) 7%;
+}</code></pre>
+    <p>and for shorthand we can use just the property <b>grid-template</b>, with value of "<kbd>rows values <b>/</b> columns vakues</kbd>"<br>Example:</p>
+    <pre><code>#container_id{
+  grid-template:auto repeat(auto-fit,minmax(60px,2fr) 3fr) / repeat(auto-fill,minmax(auto, 20%)) 7%;
+}</code></pre>
+  </section>
+  
+  <section id="define_items" class="main-section">
+    <header>
+      <h2>define items</h2>
+    </header>
+    <p>to define how much grid cells <b>items</b> spanning, we can use the two properties <b>grid-column</b> & <b>grid-row</b> with value of:<ul><li>"start horizontal line <b>/</b> end horizontal line"</li><li>"start vertical line <b>/</b> end vertical line"</li></ul>Example:</p>
+    <pre><code>#item_id{
+  grid-column:1/4;
+  grid-row:2/4;
+}</code></pre>
+    <p>or we can give them the value "<b>span <kbd>cells-number</kbd></b>"<br>Example:</p>
+     <pre><code>#item_id{
+  grid-column:span 3;
+  grid-row:span 2;
+}</code></pre>
+    <p><b>Note:</b> span values make items flexible and not fixed.</p>
+  </section>
+  
+  <section id="adjust_items_positions" class="main-section">
+    <header>
+      <h2>adjust items positions</h2>
+    </header>
+    <ol type="I">
+      <li>
+        <p>to adjust <b>all</b> items position at ones, we can use the properties <b>justify-items</b> (main axis) & <b>align-items</b> (cross axis) with values of "<b>start center end</b>"<br>Example:</p>
+        <pre><code>#container_id{
+  justify-items:center;
+  align-items:end;
+}</code></pre>
+      </li>
+      <li>
+        <p>also we can adjust a <b>single</b> item position, by the propertys <b>justify-self</b> (main axis) & <b>align-self</b> (cross axis)<br>Example:</p>
+        <pre><code>#item_id{
+  justify-self:start;
+  align-self:center;
+}</code></pre>
+      </li>
+    </ol>
+  </section>
+  
+  <section id="adjust_grid_spacing" class="main-section">
+    <header>
+      <h2>adjust grid spacing</h2>
+    </header>
+    <p>to make space <b>between</b> items, we can use the properties <b>grid-column-gap</b> & <b>grid-row-gap</b> with value of "<kbd>px % em rem vh vw vmax vmin</kbd>"<br>Example:</p>
+    <pre><code>#container_id{
+  grid-column-gap:5px;
+  grid-row-gap:2%;
+}</code></pre>
+    <p>as shorthand we can use <b>grid-gap</b>, with value of "<kbd>rows-gap columns-gap</kbd>"<br>Example:</p>
+    <pre><code>#container_id{
+  grid-gap:2% 5px;
+}</code></pre>
+    <p>and we can assign the same value to the both<br>Example:</p>
+    <pre><code>#contaner_id{
+  grid-gap:2vmin;
+}</code></pre>
+  </section>
+  
+  <section id="define_grid_areas" class="main-section">
+    <header>
+      <h2>define grid areas</h2>
+    </header>
+    <ol type="I">
+      <li><p>to define grid <b>areas</b>, we required to type the property <b>grid-template-areas</b> on container rule, with value of rows=<b>"cells or ."</b> which "." mean empty cell<br>Example:</p>
+        <pre><code>#container_id{
+  grid-template-areas:
+  "header header"
+  "advert content"
+  "   .   content"
+  "footer footer"
+}</code></pre>
+      </li>
+      <li><p>to assign areas to <b>items</b>, we should enter the property <b>grid-area</b> inside <b>item</b> rule, and give it value of "<b>cell</b>"<br>Example:</p>
+      <pre><code>#footer_item_id{
+  grid-area:footer;
+}</code></pre>
+      </li>
+    </ol>
+  </section>
+  
+  <nav id="navbar">
+    <header>
+  cascading style sheet Grid
+</header>
+        <a class="nav-link" href="#define_container" target="">define container</a>
+        <a class="nav-link" href="#define_items" target="">define items</a>
+        <a class="nav-link" href="#adjust_items_positions" target="">adjust items positions</a>
+        <a class="nav-link" href="#adjust_grid_spacing" target="">adjust grid spacing</a>
+        <a class="nav-link" href="#define_grid_areas" target="">define grid areas</a>
+  </nav>
+</main>
+
+<footer>&copy; 2021 abbani billal</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

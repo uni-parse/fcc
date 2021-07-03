@@ -1,0 +1,105 @@
+:root {
+  --deg: -45deg;
+}
+@media (min-width: 900px) {
+  iframe {
+    width: 45vmin;
+    height: 20vmin;
+  }
+}
+body {
+  text-align: center;
+  font-family: rosemary, monospace;
+  color: lightGray;
+  background: url("https://drive.google.com/thumbnail?id=1yzMTRmvG7KDd34Mdq2rVp8jDPma79New");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+#nav-bar {
+}
+a {
+  text-decoration: nonel;
+}
+a:link {
+  color: yellow;
+}
+a:visited {
+  color: lightGreen;
+}
+button {
+  background: linear-gradient(var(--deg), #b1f, #19f);
+  color: yellow;
+  border-radius: 30% 8% 17% 8%;
+  padding: 4px;
+}
+img {
+  width: 100px;
+  position: relative;
+  bottom: 28px;
+  left: 45px;
+}
+figcaption {
+  position: absolute;
+  left: -10000px;
+  opacity: 0;
+}
+main {
+  margin: 40vh 0 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+  bordor-radius: 10%;
+}
+#submit {
+  border-radius: 8% 50% 50% 8%;
+  background-color: #91f;
+  color: #1cf;
+}
+iframe {
+  width: 94vmin;
+  height: 55vmin;
+  border-radius: 27% 5% 15% 5%;
+  padding: 2px;
+  background: linear-gradient(var(--deg), #b1f, #19f);
+  animation-name: video;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes video {
+  0% {
+    --deg: 0deg;
+  }
+  12.5% {
+    --deg: 45deg;
+  }
+  25% {
+    --deg: 90deg;
+  }
+  37.5% {
+    --deg: 135deg;
+  }
+  50% {
+    --deg: 180deg;
+  }
+  62.5% {
+    --deg: 225deg;
+  }
+  75% {
+    --deg: 270deg;
+  }
+  87.5% {
+    --deg: 315deg;
+  }
+  100% {
+    --deg: 360deg;
+  }
+}
