@@ -13,10 +13,10 @@ body{
 img{
   Position:absolute;
   right:0px;
-  bottom:0px;
+  top:0px;
   padding:3px;
   background-color:rgba(0,0,0,0);
-  height:40vh;
+  height:100px;
 }
 #img1{animation:img1 5s infinite linear;}
 #img2{animation:img2 5s infinite linear;}
