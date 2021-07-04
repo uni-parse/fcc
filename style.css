@@ -18,21 +18,22 @@ img{
   background-color:rgba(0,0,0,0);
   height:40vh;
 }
-#img1{animation:img1 3s infinite;}
-#img2{animation:img2 3s infinite;}
-#img3{animation:img3 3s infinite;}
+#img1{animation:img1 3s infinite linear;}
+#img2{animation:img2 3s infinite linear;}
+#img3{animation:img3 3s infinite linear;}
 @keyframes img1{
   0%{opacity:0.1;}
   16.65%{opacity:1;}
-  40%{opacity:0.1;}
+  33.33%{opacity:0.1;}
 }
 @keyframes img2{
-  26%{opacity:0.1;}
+  33.33%{opacity:0.1;}
   50%{opacity:1;}
-  74%{opacity:0.1;}
+  66.66%{opacity:0.1;}
 }
 @keyframes img3{
-  59%{opacity:0.1;}
+  0%{opacity:0;}
+  66.66%{opacity:0.1;}
   83.35%{opacity:1;}
   100%{opacity:0.1;}
 }
