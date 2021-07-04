@@ -22,9 +22,9 @@ img{
 #img2{animation:img2 7s infinite linear;}
 #img3{animation:img3 7s infinite linear;}
 @keyframes img1{
-  0%{opacity:0.1;}
-  16.65%{opacity:1;}
-  33.33%{opacity:0.1;}
+  0%{opacity:1;}
+  6.25%{opacity:1;}
+  12.5%{opacity:0.1;}
   100%{opacity:0;}
 }
 @keyframes img2{
