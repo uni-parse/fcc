@@ -7,7 +7,6 @@
   top:0px;
 }
 body{
-  background:fixed no-repeat cover linear-gradient(60deg,#222 40%,#444 60%);
-  background-attachment:fixed;
-  background-rebeat:no-repeat;
+  background-color:#444;
+  Color:lightgray;
 }
