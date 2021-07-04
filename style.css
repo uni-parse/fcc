@@ -10,3 +10,8 @@ body{
   background-color:#444;
   Color:lightgray;
 }
+img{
+  Position:absolute;
+  right:0px;
+  top:0px;
+}
