@@ -22,26 +22,26 @@ img{
 #img3{animation:img3 5s infinite linear;}
 @keyframes img1{
   0%{opacity:1;}
-  12.5%{opacity:0.4;}
+  12.5%{opacity:0.1;}
   50%{opacity:0;}
-  87.5%{opacity:0.4;}
+  87.5%{opacity:0.1;}
   100%{opacity:1;}
 }
 @keyframes img2{
   0%{opacity:0;}
-  12.5%{opacity:0.4;}
+  12.5%{opacity:0.1;}
   25%{opacity:1;}
-  37.5%{opacity:0.4;}
+  37.5%{opacity:0.1;}
   50%{opacity:0;}
-  62.5%{opacity:0.4;}
+  62.5%{opacity:0.1;}
   75%{opacity:1;}
-  87.5%{opacity:0.4;}
+  87.5%{opacity:0.1;}
   100%{opacity:0;}
 }
 @keyframes img3{
   0%{opacity:0;}
-  37.5%{opacity:0.4;}
+  37.5%{opacity:0.1;}
   50%{opacity:1;}
-  62.5%{opacity:0.4;}
+  62.5%{opacity:0.1;}
   100%{opacity:0;}
 }
