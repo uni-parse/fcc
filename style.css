@@ -18,9 +18,9 @@ img{
   background-color:rgba(0,0,0,0);
   height:40vh;
 }
-img1{animation:img1 3s infinite;}
-img2{animation:img2 3s infinite;}
-img3{animation:img3 3s infinite;}
+img1{animation:img1 3s 55;}
+img2{animation:img2 3s 55;}
+img3{animation:img3 3s 55;}
 @keyframes img1{
   0%{opacity:0.1;}
   16.65%{opacity:1;}
