@@ -7,5 +7,5 @@
   top:0px;
 }
 body{
-  background:linear-gradient(60deg,#222 40%,#444 60%);
+  background:fixed no-repeat linear-gradient(60deg,#222 40%,#444 60%);
 }
