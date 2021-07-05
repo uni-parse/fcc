@@ -32,6 +32,9 @@ hr{clear:right;}
   max-height:4vh;
   width:auto;
 }
+.facebook-img{
+  border-radiud:30%;
+}
 .navimg{
   Position:fixed;
   right:0px;
