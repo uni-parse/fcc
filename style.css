@@ -9,6 +9,11 @@
 body{
   background-color:#444;
   Color:lightgray;
+  margin:0px;
+}
+header{
+  width:95%;
+  border solid 2px lightgray;
 }
 #headimg{
   float:right;
