@@ -49,11 +49,11 @@ a{
   text-decoration:none;
   color:lightgray;
   font-size:1.2rem;
+  margin:0.5vmin;
 }
 .social-media{
   max-height:4vmin;
   width:auto;
-  margin:0.5vmin;
 }
 .facebook-img{
   border-radius:50%;
