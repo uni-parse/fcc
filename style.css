@@ -43,7 +43,7 @@ hr{clear:right;}
   display:flex;
   flex-direction:row-reverse;
   align-items:center;
-  height:5vh;
+  height:5vmin;
 }
 a{
   text-decoration:none;
@@ -51,9 +51,9 @@ a{
   font-size:1.2rem;
 }
 .social-media{
-  max-height:4vh;
+  max-height:4vmin;
   width:auto;
-  margin:0.5vh;
+  margin:0.5vmin;
 }
 .facebook-img{
   border-radius:50%;
@@ -63,7 +63,7 @@ a{
   right:0px;
   top:0px;
   background-color:rgba(0,0,0,0);
-  height:5vh;
+  height:5vmin;
 }
 #img1{animation:img1 5s infinite linear;}
 #img2{animation:img2 5s infinite linear;}
