@@ -17,7 +17,7 @@ body{
   justify-content:center;
 }
 #headdiv{}
-h1{line-height:2.4em;}
+h1{line-height:2.4em;margin-top:50%;margin-bottom:50%;}
 #headimg{
   float:right;
   width:30vw;
