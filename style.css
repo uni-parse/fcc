@@ -1,4 +1,9 @@
-@media(width:900px){}
+@media only screen and (orientation:landscape) and (min-height:992px){
+  .project{width:45vh;height:120vh;}
+}
+@media only screen and (orientation:portscape) and (max-width:600px){
+  .project{width:90vw;height:70vh;}
+}
 body{
   background-color:#444;
   Color:lightgray;
@@ -36,7 +41,7 @@ body{
   100%{right:0px;filter:blur(0px);}
 }
 hr{clear:right;}
-.project{width:90vw;height:50vh;}
+.project{width:70vw;height:70vh;}
 #navbar{
   position:fixed;
   top:0px;
