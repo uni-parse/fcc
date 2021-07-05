@@ -1,8 +1,4 @@
 @media(width:900px){}
-#navbar{
-  position:fixed;
-  top:0px;
-}
 body{
   background-color:#444;
   Color:lightgray;
@@ -23,6 +19,16 @@ h1{line-height:2.4em;}
   width:30vw;
 }
 hr{clear:right;}
+#navbar{
+  position:fixed;
+  top:0px;
+  right:5vh;
+  display:flex;
+  flex-direction:row-reverse;
+}
+.social-media{
+  height:5vh;
+}
 .navimg{
   Position:fixed;
   right:0px;
