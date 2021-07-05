@@ -10,7 +10,7 @@ body{
 }
 #welcome-section{
   width:95%;
-  border solid 2px lightgray;
+  border:solid 2px lightgray;
   height:100vh;
 }
 #headimg{
