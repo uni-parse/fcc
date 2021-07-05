@@ -16,7 +16,7 @@ body{
   flex-direction:column;
   justify-content:center;
 }
-#headdiv{}
+#headdiv{border:solid 1px white;}
 h1{line-height:2.4em;margin-top:50%;margin-bottom:50%;}
 #headimg{
   float:right;
