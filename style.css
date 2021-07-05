@@ -10,7 +10,7 @@ body{
   background-color:#444;
   Color:lightgray;
 }
-.headimg{
+#headimg{
   float:right;
   width:30vw;
 }
