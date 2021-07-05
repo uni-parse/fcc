@@ -1,8 +1,11 @@
 @media only screen and (orientation:landscape) and (min-height:992px){
-  .project{width:45vh;height:120vh;}
+  .project{width:30vh;height:55vh;}
+}
+@media only screen and (orientation:landscape) and (max-height:991px){
+  .project{width:45vh;height:85vh;}
 }
 @media only screen and (orientation:portscape) and (max-width:600px){
-  .project{width:90vw;height:70vh;}
+  .project{width:90vw;height:170vw;}
 }
 body{
   background-color:#444;
@@ -41,7 +44,7 @@ body{
   100%{right:0px;filter:blur(0px);}
 }
 hr{clear:right;}
-.project{width:70vw;height:70vh;}
+.project{width:70vw;height:135vw;}
 #navbar{
   position:fixed;
   top:0px;
