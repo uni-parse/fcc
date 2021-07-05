@@ -10,7 +10,12 @@ body{
   background-color:#444;
   Color:lightgray;
 }
-img{
+.headimg{
+  float:right;
+  width:30vw;
+}
+hr{clear:right;}
+.navimg{
   Position:absolute;
   right:0px;
   top:0px;
