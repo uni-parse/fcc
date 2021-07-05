@@ -74,32 +74,14 @@ iframe {
   animation-iteration-count: infinite;
   animation-timing-function: ease;
 }
-@keyframes video {
-  0% {
-    --deg: 0deg;
-  }
-  12.5% {
-    --deg: 45deg;
-  }
-  25% {
-    --deg: 90deg;
-  }
-  37.5% {
-    --deg: 135deg;
-  }
-  50% {
-    --deg: 180deg;
-  }
-  62.5% {
-    --deg: 225deg;
-  }
-  75% {
-    --deg: 270deg;
-  }
-  87.5% {
-    --deg: 315deg;
-  }
-  100% {
-    --deg: 360deg;
-  }
-}
+/*@keyframes video {
+  0% {--deg: 0deg;}
+  12.5% {--deg: 45deg;}
+  25% {--deg: 90deg;}
+  37.5% {--deg: 135deg;}
+  50% {--deg: 180deg;}
+  62.5% {--deg: 225deg;}
+  75% {--deg: 270deg;}
+  87.5% {--deg: 315deg;}
+  100% {--deg: 360deg;}
+}*/
