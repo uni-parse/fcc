@@ -24,7 +24,7 @@ h1{line-height:2.4em;}
 }
 hr{clear:right;}
 .navimg{
-  Position:absolute;
+  Position:fixed;
   right:0px;
   top:0px;
   background-color:rgba(0,0,0,0);
