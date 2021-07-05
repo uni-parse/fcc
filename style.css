@@ -12,8 +12,11 @@ body{
 #welcome-section{
   width:100%;
   height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
-#headdiv{line-height:auto;}
+#headdiv{}
 #headimg{
   float:right;
   width:30vw;
