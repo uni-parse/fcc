@@ -28,7 +28,8 @@ hr{clear:right;}
   height:5vh;
 }
 .social-media{
-  height:100px;
+  max-width:5vh;
+  height:auto;
 }
 .navimg{
   Position:fixed;
