@@ -36,6 +36,7 @@ body{
   100%{right:0px;filter:blur(0px);}
 }
 hr{clear:right;}
+.project{width:90vw;height:100vh;}
 #navbar{
   position:fixed;
   top:0px;
