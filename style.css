@@ -42,6 +42,11 @@ hr{clear:right;}
   align-items:center;
   height:5vh;
 }
+a{
+  text-decoration:none;
+  color:lightgray;
+  font-size:1.2rem;
+}
 .social-media{
   max-height:4vh;
   width:auto;
