@@ -4,6 +4,7 @@ body{
   Color:lightgray;
   margin:0px;
   text-align:center;
+  text-family:rosemary,monospace;
 }
 #welcome-section{
   width:100%;
@@ -18,9 +19,10 @@ body{
   animation:h1 3s forwards ease-out;
   position:relative;
   left:-70vw;
+  filter:blur(20px);
 }
 @keyframes h1{
-  100%{left:0px;}
+  100%{left:0px;filter:blur(0px);}
 }
 #headimg{
   float:right;
@@ -51,6 +53,7 @@ a{
 .social-media{
   max-height:4vh;
   width:auto;
+  margin:0.5vh;
 }
 .facebook-img{
   border-radius:50%;
