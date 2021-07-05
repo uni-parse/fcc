@@ -7,11 +7,15 @@ body{
   background-color:#444;
   Color:lightgray;
   margin:0px;
+  text-align:center;
 }
 #welcome-section{
+  desplay;flex;
+  align-content:center;
   width:95%;
   height:100vh;
 }
+#headdiv{margin:0px;}
 #headimg{
   float:right;
   width:30vw;
