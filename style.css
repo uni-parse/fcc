@@ -25,11 +25,12 @@ hr{clear:right;}
   right:5vh;
   display:flex;
   flex-direction:row-reverse;
-  height:6vh;
+  align-items:center;
+  height:5vh;
 }
 .social-media{
-  max-width:5vh;
-  height:auto;
+  max-height:4vh;
+  width:auto;
 }
 .navimg{
   Position:fixed;
