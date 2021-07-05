@@ -25,9 +25,10 @@ hr{clear:right;}
   right:5vh;
   display:flex;
   flex-direction:row-reverse;
+  height:5vh;
 }
 .social-media{
-  height:5vh;
+  height:100%;
 }
 .navimg{
   Position:fixed;
