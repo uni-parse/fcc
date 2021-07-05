@@ -29,7 +29,7 @@ hr{clear:right;}
   top:0px;
   background-color:rgba(0,0,0,0);
   height:5vh;
-opacity:0;
+  opacity:0;
 }
 #img1{animation:img1 5s infinite linear;}
 #img2{animation:img2 5s infinite linear;}
