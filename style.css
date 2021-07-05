@@ -35,6 +35,7 @@ opacity:0;
 #img2{animation:img2 5s infinite linear;}
 #img3{animation:img3 5s infinite linear;}
 @keyframes img1{
+  0%{opacity:1;}
   12.5%{opacity:0.2;}
   50%{opacity:0;}
   87.5%{opacity:0.2;}
