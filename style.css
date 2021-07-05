@@ -1,7 +1,4 @@
-@media(){}
-#welcom-section{
-  height:100vh;
-}
+@media(width:900px){}
 #navbar{
   position:fixed;
   top:0px;
@@ -11,9 +8,10 @@ body{
   Color:lightgray;
   margin:0px;
 }
-header{
+#welcom-section{
   width:95%;
   border solid 2px lightgray;
+  height:100vh;
 }
 #headimg{
   float:right;
