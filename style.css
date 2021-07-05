@@ -12,7 +12,7 @@ body{
   flex-direction:column;
   justify-content:center;
 }
-#headdiv{border:;}
+#headdiv{}
 #h1{
   line-height:2.4em;
   animation:h1 3s forwards ease-out;
