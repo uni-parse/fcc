@@ -9,8 +9,10 @@ body{
   text-align:justify;
   width:85%;
   background-color:rgba(0,0,0,0.5);
-  box-shadow:0 0 20px 3% rgba(0,0,0,0.5)
+  box-shadow:0 0 20px 3% rgba(0,0,0,0.5);
+  margin:auto;
 }
+li{line-height:2rem;}
 #image{
   max-width:100%;
   height:auto;
