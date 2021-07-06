@@ -31,10 +31,6 @@ body{
   animation:headimg 3s forwards ease-out;
   right:-30vw;
   filter:blur(20px);
-  -webkit-filter: drop-shadow(1px 1px 0 black)
-                  drop-shadow(-1px -1px 0 black);
-  filter: drop-shadow(1px 1px 0 black) 
-          drop-shadow(-1px -1px 0 black);
 }
 @keyframes headimg{
   100%{right:0px;filter:blur(0px);}
