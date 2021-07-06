@@ -3,9 +3,14 @@ body{
   text-align:center;
   font-family:rosemary;
   color:lightgray;
-  background:linear-gradient(90deg,#325,#333,#325);
+  background:linear-gradient(90deg,#444,#111,#444);
 }
-#tribute-info{text-align:justify;width:85%;}
+#tribute-info{
+  text-align:justify;
+  width:85%;
+  background-color:rgba(0,0,0,0.5);
+  box-shadow:0 0 20px 3% rgba(0,0,0,0.5)
+}
 #image{
   max-width:100%;
   height:auto;
