@@ -58,7 +58,7 @@ hr{clear:right;}
   flex-direction:row-reverse;
   align-items:center;
   height:5vmin;
-  background-color:rgba(0,0,0,0.45);
+  background-color:rgba(0,0,0,0.35);
   border-radius:20%;
 }
 a{
