@@ -15,7 +15,7 @@ body{
   padding:3px;
   position:relative;
   background:linear-gradient(var(--deg),#18f,#c0c);
-  animation:joseph 1.2s 5 linear;
+  animation:joseph 1.2s infinite linear;
 }
 a{text-decoration:none;}
 a:link{color:#18f;}
