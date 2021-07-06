@@ -3,8 +3,7 @@ body{
   text-align:center;
   font-family:rosemary;
   color:lightgray;
-  background:url("../images/joseph.jpg");
-  /*background: fixed cover no-repeat;*/
+  background:#000 url("../images/joseph.jpg") no-repeat fixed;
 }
 #tribute-info{
   text-align:justify;
