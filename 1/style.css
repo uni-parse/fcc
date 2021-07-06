@@ -1,4 +1,4 @@
-:root{--deg:0deg;}
+:root{}
 body{
   text-align:center;
   font-family:rosemary;
@@ -13,35 +13,41 @@ body{
   margin:auto;
 }
 li{line-height:2rem;}
+a{text-decoration:none;}
+a:link{color:#18f;}
+a:visited{color:#184;}
 #image{
-  max-width:100%;
+  max-width:45%;
   height:auto;
   border-radius:40% 10% 25% 10%;
   display:block;
   margin:auto;
-  padding:3px;
   position:relative;
-  background:linear-gradient(var(--deg),#18f,#c0c);
-  animation:joseph 1.2s linear 5;
+  animation:eye 1.2s linear 5;
 }
-a{text-decoration:none;}
-a:link{color:#18f;}
-a:visited{color:#184;}
-@keyframes joseph{
-  0%{--deg:0deg;left:0px;bottom:0px;opacity:1;transform:scale(1.1);}
-  25%{--deg:90deg;left:20px;bottom:10px;}
-  50%{--deg:180deg;left:0px;bottom:0px;opacity:0.7;transform:scale(0.8);}
-  75%{--deg:270deg;left:-20px;bottom:10px;}
-  100%{--deg:360deg;left:0px;bottom:0px;opacity:1;transform:scale(1.1);}
+@keyframes eye{
+  0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1.2);}
+  25%{left:20px;bottom:10px;}
+  50%{left:0px;bottom:0px;opacity:0.6;transform:scale(0.8);}
+  75%{left:-20px;bottom:10px;}
+  100%{left:0px;bottom:0px;opacity:0.9;transform:scale(1.2);}
 }
-/*@keyframes body{
-  0%{--c:#527;}
-  12%{--c:#729;}
-  25%{--c:#a1a;}
-  37%{--c:#c1c;}
-  50%{--c:#e0e;}
-  63%{--c:#c1c;}
-  75%{--c:#a1a;}
-  88%{--c:#729;}
-  100%{--c:#527;}
-}*/
+#image:before,#image:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  width:5%;
+  hight:5%;
+  border-radius:50%;
+  background-color:white;
+  animation:eye-core 1.2s ease-in 5;
+}
+#image:after{
+  width:2%;
+  hight:2%;
+  background-color:black;
+}
+@keyframe eye-core{
+
+}
