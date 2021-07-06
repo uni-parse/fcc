@@ -24,13 +24,13 @@ a:visited{color:#184;}
   justify-content:center;
   align-items:center;
   position:relative;
-  animation:eye 3.5s linear infinite;
+  animation:eye 3.5s linear 0;
 }
 @keyframes eye{
   0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
-  25%{left:-35vw;bottom:10vw;opacity:0.6;transform:scalex(0.7) scaley(0.5) skewy(10deg);}
+  25%{left:-25vw;bottom:10vw;opacity:0.6;transform:scalex(0.7) scaley(0.5) skewy(10deg);}
   50%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
-  75%{left:35vw;bottom:10vw;opacity:0.6;transform:scalex(0.7) scaley(0.5) skewy(-10deg);}
+  75%{left:25vw;bottom:10vw;opacity:0.6;transform:scalex(0.7) scaley(0.5) skewy(-10deg);}
   100%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
 }
 #image:before {
@@ -47,7 +47,7 @@ a:visited{color:#184;}
   animation:core 3.5s linear infinite;
 }
 @keyframes core{
-  25%{left:3.5vw;top:1vw;transform:scaleX(.4);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #a0f;}
-  50%{left:1.5vw;top:-.8vw;transform:scale(1);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #fff;}
-  75%{left:-.5vw;top:1vw;transform:scaleX(.4);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #0ff;}
+  25%{left:3.5vw;top:1vw;transform:scaleX(.4);}
+  50%{left:1.5vw;top:-.8vw;transform:scale(1);}
+  75%{left:-.5vw;top:1vw;transform:scaleX(.4);}
 }
