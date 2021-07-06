@@ -17,37 +17,37 @@ a{text-decoration:none;}
 a:link{color:#18f;}
 a:visited{color:#184;}
 #image{
-  max-width:45%;
-  height:auto;
-  border-radius:40% 10% 25% 10%;
-  display:block;
+  width: 45vw;
+  height: auto;
   margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   position:relative;
-  animation:eye 1.2s linear 5;
+  animation:eye 2.6s linear infinite;
 }
 @keyframes eye{
-  0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1.2);}
-  25%{left:20px;bottom:10px;}
-  50%{left:0px;bottom:0px;opacity:0.6;transform:scale(0.8);}
-  75%{left:-20px;bottom:10px;}
-  100%{left:0px;bottom:0px;opacity:0.9;transform:scale(1.2);}
+  0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
+  25%{left:-15vw;bottom:5vw;opacity:0.6;transform:scale(0.7) skewy(0deg);}
+  50%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
+  75%{left:15vw;bottom:5vw;opacity:0.6;transform:scale(0.7) skewy(-0deg);}
+  100%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
 }
-#image:before,#image:after{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  width:5%;
-  hight:5%;
-  border-radius:50%;
-  background-color:white;
-  animation:eye-core 1.2s ease-in 5;
+#image:before {
+  content: "";
+  background-color: transparent;
+  box-shadow:-1.5vw 0.8vw 5px 2.53125vw #fff;
+  display:block;
+  border-radius: 50%;
+  position:relative;
+  width: 1.6875vw;
+  height: 1.6875vw;
+  top: -.8vw;
+  left: 1.5vw;
+  animation:core 2.6s linear infinite;
 }
-#image:after{
-  width:2%;
-  hight:2%;
-  background-color:black;
-}
-@keyframe eye-core{
-
+@keyframes core{
+  25%{left:3.5vw;top:1vw;transform:scaleX(.4);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #a0f;}
+  50%{left:1.5vw;top:-.8vw;transform:scale(1);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #fff;}
+  75%{left:-.5vw;top:1vw;transform:scaleX(.4);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #0ff;}
 }
