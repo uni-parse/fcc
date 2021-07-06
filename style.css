@@ -58,8 +58,8 @@ hr{clear:right;}
   flex-direction:row-reverse;
   align-items:center;
   height:5vmin;
-  background-color:rgba(0,0,0,0.6);
-  border-radius:5%;
+  background-color:rgba(0,0,0,0.45);
+  border-radius:20%;
 }
 a{
   text-decoration:none;
