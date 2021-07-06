@@ -24,7 +24,7 @@ a:visited{color:#184;}
   justify-content:center;
   align-items:center;
   position:relative;
-  animation:eye 2.6s linear infinite;
+  animation:eye 3.5s linear infinite;
 }
 @keyframes eye{
   0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
@@ -44,7 +44,7 @@ a:visited{color:#184;}
   height: 1.6875vw;
   top: -.8vw;
   left: 1.5vw;
-  animation:core 2.6s linear infinite;
+  animation:core 3.5s linear infinite;
 }
 @keyframes core{
   25%{left:3.5vw;top:1vw;transform:scaleX(.4);box-shadow:-1.5vw 0.8vw 5px 2.53125vw #a0f;}
