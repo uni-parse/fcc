@@ -24,7 +24,7 @@ a:visited{color:#184;}
   justify-content:center;
   align-items:center;
   position:relative;
-  animation:eye 3.5s linear 0;
+  animation:eye 3.5s ease 0;
 }
 @keyframes eye{
   0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
@@ -36,7 +36,7 @@ a:visited{color:#184;}
 #image:before {
   content: "";
   background-color: transparent;
-  box-shadow:-1.5vw 0.8vw 5px 2.53125vw #fff;
+  box-shadow:-1.5vw .8vw 5px 2.53125vw #fff;
   display:block;
   border-radius: 50%;
   position:relative;
@@ -45,6 +45,7 @@ a:visited{color:#184;}
   top: -.8vw;
   left: 1.5vw;
   animation:core 3.5s linear infinite;
+  z-index:3;
 }
 @keyframes core{
   25%{left:3.5vw;top:1vw;transform:scaleX(.4);}
