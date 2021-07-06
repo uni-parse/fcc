@@ -1,13 +1,9 @@
-:root{--deg:0deg;--c:#527;}
+:root{--deg:0deg;}
 body{
   text-align:center;
   font-family:rosemary;
   color:lightgray;
-  background:linear-gradient(90deg,#325,var(--c),#325);
-  animation-name:body;
-  animation-duration:3.2s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
+  background:linear-gradient(90deg,#325,#333,#325);
 }
 #tribute-info{text-align:center;width:95%;}
 #image{
@@ -19,22 +15,19 @@ body{
   padding:3px;
   position:relative;
   background:linear-gradient(var(--deg),#18f,#c0c);
-  animation-name:joseph;
-  animation-duration:1.2s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
+  animation:joseph 1.2s 5 linear;
 }
 a{text-decoration:none;}
 a:link{color:#18f;}
 a:visited{color:#184;}
-/*@keyframes joseph{
+@keyframes joseph{
   0%{--deg:0deg;left:0px;bottom:0px;opacity:1;transform:scale(1.1);}
   25%{--deg:90deg;left:20px;bottom:10px;}
   50%{--deg:180deg;left:0px;bottom:0px;opacity:0.7;transform:scale(0.8);}
   75%{--deg:270deg;left:-20px;bottom:10px;}
   100%{--deg:360deg;left:0px;bottom:0px;opacity:1;transform:scale(1.1);}
 }
-@keyframes body{
+/*@keyframes body{
   0%{--c:#527;}
   12%{--c:#729;}
   25%{--c:#a1a;}
