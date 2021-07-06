@@ -5,7 +5,7 @@ body{
   color:lightgray;
   background:linear-gradient(90deg,#325,#333,#325);
 }
-#tribute-info{text-align:center;width:95%;}
+#tribute-info{text-align:justify;width:85%;}
 #image{
   max-width:100%;
   height:auto;
