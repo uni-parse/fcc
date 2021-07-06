@@ -36,15 +36,15 @@ body{
   100%{right:0px;filter:blur(0px);}
 }
 hr{clear:right;}
-.project{width:80vw;height:142.22vw;}
+.project{width:80vw;height:128vw;}
 @media only screen and (orientation:landscape) and (min-width:992px){
-  .project{width:30vw;height:53.33vw;}
+  .project{width:30vw;height:48vw;}
 }
 @media only screen and (orientation:landscape) and (max-width:992px){
-  .project{width:45vw;height:80vw;}
+  .project{width:45vw;height:72vw;}
 }
 @media only screen and (orientation:portrait) and (max-width:750px){
-  .project{width:95vw;height:168.89vw;}
+  .project{width:95vw;height:152vw;}
 }
 #navbar{
   position:fixed;
