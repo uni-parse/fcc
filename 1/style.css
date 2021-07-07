@@ -2,7 +2,7 @@
 }
 body {
   text-align: center;
-  font-family: rosemary;
+  font-family: rosemary,monospace;
   color: blue;
   background:#222 url("../images/joseph.jpg") fixed no-repeat;
   background-size:cover;
