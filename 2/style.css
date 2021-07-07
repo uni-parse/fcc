@@ -2,12 +2,13 @@
 }
 body {
   font-family: rosemary, monospace;
-  background: url("https://drive.google.com/thumbnail?id=1Rc3mKsAEhdIuR9pGTProJB1rTqsNruN3");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background:#222 url("../images/map-portrait.jpg") fixed no-repeat;
   background-size: cover;
   color: lightgray;
   text-align: center;
+}
+@media only screen and (orientation:landscape){
+  body{background-image:url("../images/map-landscape");
 }
 header {
 }
