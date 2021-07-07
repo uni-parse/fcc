@@ -17,11 +17,12 @@ margin:auto;
 padding:0;
 }
 form {
-  background: linear-gradient(
+  background: repeating-linear-gradient(
     -45deg,
-    rgba(10, 190, 250, 1),
-    rgba(0, 0, 0, 0.7) 20%,
-    rgba(210, 0, 250, 1) 30%
+    rgba(10, 190, 250, 1) 0px,
+    rgba(0, 0, 0, 0.7) 15vmin,
+    rgba(0, 0, 0, 0.7) 15vmin,
+    rgba(210, 0, 250, 1) 35vmin
   );
   border-radius: 8%;
   padding: 10vh 3vw 10vh 3vw;
