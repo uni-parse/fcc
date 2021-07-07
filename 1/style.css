@@ -17,38 +17,49 @@ a{text-decoration:none;}
 a:link{color:#18f;}
 a:visited{color:#184;}
 #image{
-  width: 45vw;
-  height: auto;
-  margin:auto;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
-  animation:eye 3.5s ease 0;
+  position:absolute;
+  width:30vmin;
+}
+#image-div{
+      	background:;
+      	width:30vmin;
+      	height:30vmin;
+        margin:auto; 
+        display:flex;
+        justify-content:center;
+        align-items:center; 
+        position:relative;
+        left:0;
+        bottom:0;
+        opacity:.9;
+        z-index:1;
+        animation:eye 6s linear infinite;
 }
 @keyframes eye{
-  0%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
-  25%{left:-25vw;bottom:10vw;opacity:0.6;transform:scalex(0.7) scaley(0.5) skewy(10deg);}
-  50%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
-  75%{left:25vw;bottom:10vw;opacity:0.6;transform:scalex(0.7) scaley(0.5) skewy(-10deg);}
-  100%{left:0px;bottom:0px;opacity:0.9;transform:scale(1) skewy(0deg);}
+      	/*12.5%{transform:skewy(10deg) scalex(.9) scaley(.825);}*/
+      	25%{left:-31vmin;bottom:15vmin;opacity:.4;transform:scalex(.8) scaley(.65) /*skewy(0deg) rotate(90deg)*/;z-index:1;}
+      	/*37.5%{transform:skewy(-10deg) scalex(.65) scaley(.575);}*/
+      	50%{left:0;bottom:30vmin;opacity:.2;transform:scale(.5) /*skewy(0deg) rotate(180deg)*/;z-index:-1;} 
+      	/*62.5%{transform:skewy(10deg) scalex(.65) scaley(.575);}*/
+      	75%{left:31vmin;bottom:15vmin;opacity:.4;transform:scalex(.8) scaley(.65) /*skewy(0deg) rotate(270deg)*/;z-index:1;}
+        /*87.5%{transform:skewy(-10deg) scalex(.9) scaley(.825);}
+        100%{transform:rotate(360deg);}*/
 }
-#image:before {
-  content: "";
-  background-color: transparent;
-  box-shadow:-1.5vw .8vw 5px 2.53125vw #fff;
-  display:block;
-  border-radius: 50%;
-  position:relative;
-  width: 1.6875vw;
-  height: 1.6875vw;
-  top: -.8vw;
-  left: 1.5vw;
-  animation:core 3.5s linear infinite;
-  z-index:3;
+#image-div:before {
+      	content: "";
+      	background:transparent;
+      	box-shadow:-1vmin .5333vmin 5px 1.85625vmin #eee; 
+      	display:block;
+      	border-radius: 50%; 
+      	position:relative;
+      	width: 1.246666vmin;
+      	height: 1.246666vmin;
+      	bottom: 2.2vmin;
+      	left: 2vmin;
+      	animation:core 6s linear infinite;
 }
-@keyframes core{
-  25%{left:3.5vw;top:1vw;transform:scaleX(.4);}
-  50%{left:1.5vw;top:-.8vw;transform:scale(1);}
-  75%{left:-.5vw;top:1vw;transform:scaleX(.4);}
+@keyframes core{ 
+      	25%{left:3.3333vmin;bottom:1.1vmin;transform:scaley(1.2);} 
+      	50%{left:2vmin;bottom:0vmin;transform:scale(1);} 
+      	75%{left:.4vmin;bottom:1.1vmin;transform:scaley(1.2);}
 }
