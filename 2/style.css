@@ -13,13 +13,15 @@ body {
 header {
 }
 main {
+margin:auto;
+padding:0;
 }
 form {
   background: linear-gradient(
     -45deg,
     rgba(10, 190, 250, 1),
     rgba(0, 0, 0, 0.7) 20%,
-    rgba(210, 0, 250, 1)
+    rgba(210, 0, 250, 1) 30%
   );
   border-radius: 8%;
   padding: 10vh 3vw 10vh 3vw;
@@ -28,11 +30,9 @@ form {
   justify-content: space-around;
   align-items: center;
 }
-fieldset {
+fieldset,section {
   border: doted yellow 1vmin;
   border-radius: 10%;
   text-align: left;
-}
-section {
-  text-align: left;
+  width:80vw;
 }
