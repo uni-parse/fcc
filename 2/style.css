@@ -29,7 +29,7 @@ main {
 form {
 }
 fieldset {
-  border: doted yellow 2px;
+  border: doted yellow 1vmin;
   border-radius: 10%;
   text-align: left;
 }
