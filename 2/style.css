@@ -16,21 +16,20 @@ main {
   background: linear-gradient(
     -45deg,
     rgba(10, 190, 250, 1),
-    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7) 20%,
     rgba(210, 0, 250, 1)
   );
-  border-radius: 10%;
-  padding: 10px 0 10px 0;
+  border-radius: 8%;
+  padding: 10vh 3vw 10vh 3vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 95vh;
 }
 form {
 }
 fieldset {
-  border: dashed yellow 2px;
+  border: doted yellow 2px;
   border-radius: 10%;
   text-align: left;
 }
