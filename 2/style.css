@@ -19,21 +19,17 @@ padding:0;
 form {
   background: repeating-linear-gradient(
     -45deg,
-    rgba(10, 190, 250, 1) 0px,
-    rgba(0, 0, 0, 0.7) 15vmin,
-    rgba(0, 0, 0, 0.7) 15vmin,
-    rgba(210, 0, 250, 1) 35vmin
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(10, 190, 250, 1) 15vmin,
+    hsl(95,100%,50%) 30vmin,
+    rgba(0, 0, 0, 0.5) 45vmin,
   );
   border-radius: 8%;
   padding: 10vh 3vw 10vh 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 fieldset,section {
-  border: doted yellow 1vmin;
+  border: double #a0f 1vmin;
   border-radius: 10%;
   text-align: left;
-  width:80vw;
+  margin:auto;
 }
