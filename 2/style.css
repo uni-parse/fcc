@@ -13,6 +13,8 @@ body {
 header {
 }
 main {
+}
+form {
   background: linear-gradient(
     -45deg,
     rgba(10, 190, 250, 1),
@@ -25,8 +27,6 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-form {
 }
 fieldset {
   border: doted yellow 1vmin;
