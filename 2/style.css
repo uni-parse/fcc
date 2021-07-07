@@ -8,7 +8,7 @@ body {
   text-align: center;
 }
 @media only screen and (orientation:landscape){
-  body{background-image:url("../images/map-landscape");
+  body{background-image:url("../images/map-landscape");}
 }
 header {
 }
