@@ -4,7 +4,7 @@ body {
   text-align: center;
   font-family: rosemary;
   color: lightgray;
-  background: #000 url("../images/joseph.jpg") no-repeat fixed;
+  background: #000 url("../images/joseph.jpg") cover no-repeat fixed;
 }
 #tribute-info {
   text-align: justify;
