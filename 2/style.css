@@ -1,35 +1,145 @@
-:root {
-}
 body {
   font-family: rosemary, monospace;
-  background:#222 url("../images/map-portrait.jpg") fixed no-repeat;
-  background-size: cover;
+  background:#222 url("../images/map-landscape.jpg") 0/cover fixed no-repeat;
   color: lightgray;
-  text-align: center;
+  text-align:center;
+  font-size:1em;
 }
-@media only screen and (orientation:landscape){
-  body{background-image:url("../images/map-landscape.jpg");}
+@media only screen and (orientation:portrait){
+  body{background-image:url("../images/map-portrait.jpg");}
+  form{flex-direction:column !important;}
 }
 header {
 }
-main {
-margin:auto;
-padding:0;
+main{
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 form {
-  background: repeating-linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0.5) 0,
-    rgba(10, 190, 250, 1) 15vmin,
-    hsl(95,100%,50%) 30vmin,
-    rgba(0, 0, 0, 0.5) 45vmin,
+   background: repeating-linear-gradient(60deg,
+    rgba(0,155,255,.5) 0vmin,transparent 5vmin,
+    transparent 5vmin,rgba(255,70,0,0.5) 10vmin,
+    rgba(255,70,0,0.5) 10vmin,transparent 15vmin,
+    transparent 15vmin,rgba(100,255,0,.5) 20vmin,
+    rgba(100,255,0,.5) 20vmin,transparent 25vmin,
+    transparent 25vmin,rgba(0,155,255,.5) 30vmin
   );
-  border-radius: 8%;
-  padding: 10vh 3vw 10vh 3vw;
+  display:flex;
+  justify-content:space-between;
+  text-align:center;
+  border-radius: 5%;
+  padding:2vmin;
 }
-fieldset,section {
-  border: double #a0f 1vmin;
-  border-radius: 10%;
-  text-align: left;
+input{
+	color:#f70;
+	padding:.2rem .2rem .2rem 2rem;
+	border:none;
+	border-bottom:solid #7f0 ;
+	border-radius:30%;
+}
+input::placeholder,textarea::placeholder{
+	color:#0bf;
+	opacity:0.9;
+}
+input[type="text"]{
+	background:#333 url("../images/username.png") .2rem/1rem no-repeat ;
+	width:13rem;
+}
+input[type="email"]{
+	background:#333 url("../images/email.png") .2rem/1rem no-repeat ;
+}
+input[type="password"]{
+	background:#333 url("../images/password.png") .2rem/1rem no-repeat ;
+	width:9rem;
+}
+input[type="number"]{
+	background:#333 url("../images/phone.png") .2rem/1rem no-repeat ;
+}
+input[type="date"]{
+	background:#333 url("../images/date.png") .2rem/1rem no-repeat ;
+	width:4rem;
+}
+/*input[type="checkbox"]{background:red;color:yellow;width:;}
+input[type="radio"]{background:;width:;}*/
+select,textarea{
+	background:#333;
+	color:#f70;
+	border:none;
+	border-top:solid #7f0;
+	border-bottom:solid #7f0;
+	border-radius:30%;
+}
+textarea{border-radius:5%;}
+#sex,#manga,#submit-field,#s1{
+	border:none;
+  border-right: solid hsl(20,100%,50%) .07rem;
+  border-bottom:solid hsl(20,100%,50%) .07rem;
+  box-shadow:.3rem .3rem 20px hsl(20,100%,30%);
+  border-radius: 5%;
+  background:rgba(0,0,0,0.6);
+  padding:5vh 2vw 5vh 2vw;
   margin:auto;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+#s1{border-radius:5% 5% 50% 5%;}
+#sex{display:inline;padding:1vh 2vw 1vh 2vw;}
+table,#s1-div,#comment{text-align:left;margin:auto;}
+img{max-width:28%;height:auto;float:right;}
+#s3{margin:auto;}
+#submit{
+	background:rgba(0,155,255,.5);
+	color:hsl(15,100%,55%);
+	padding:.5rem;
+	border-radius:20% 50% 20% 20%;
+	border-right:white solid;
+	border-bottom:;
+}
+#submit-div{
+  border:none;
+  margin:auto;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#submit-div:before{
+  content:"";
+  background:#f70;
+  position:relative;
+  width:.3rem;
+  height:.3rem;
+  border-radius:50%;
+  box-shadow:0 0 20px .3rem #f70;
+  left:.22rem;
+  bottom:-1rem;
+  animation:submit-b 4s ease-out infinite;
+}
+@keyframes submit-b{
+	20%{bottom:1rem;left:.22rem;}
+	40%{bottom:1rem;left:2.7rem;}
+	60%{bottom:0.2rem;left:4rem;}
+	80%{bottom:-1rem;left:4rem;}
+}
+#submit-div:after{
+  content:"";
+  background:#7f0;
+  position:relative;
+  width:.3rem;
+  height:.3rem;
+  border-radius:50%;
+  box-shadow:0 0 20px .3rem #7f0;
+  left:-.22rem;
+  bottom:-1rem;
+  animation:submit-a 4s ease-in infinite;
+}
+@keyframes submit-a{
+	20%{bottom:-1rem;left:-4rem;}
+	40%{bottom:1rem;left:-4rem;}
+	60%{bottom:1rem;left:-1.4rem;}
+	80%{bottom:0.2rem;left:-0.25rem;}
 }
