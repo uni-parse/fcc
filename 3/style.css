@@ -42,8 +42,8 @@ button {
 img {
   width: 10vw;
   position: relative;
-  bottom:;
-  left:;
+  bottom:3vw;
+  left:3vw;
 }
 figcaption {
   position: absolute;
