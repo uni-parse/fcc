@@ -6,13 +6,13 @@
     width: 45vmin !important;
     height: 20vmin !important;
   }
-  body{background-image:url("../images/s21-l") !important;}
+  body{background-image:url("../images/s21-l.jpeg") !important;}
 }
 body {
   text-align: center;
   font-family: rosemary, monospace;
   color: lightGray;
-  background:#222 url("../images/s21-p") 0/cover fixed no-repeat;
+  background:#222 url("../images/s21-p.jpeg") 0/cover fixed no-repeat;
 }
 #header {
   display: flex;
