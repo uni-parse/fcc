@@ -1,62 +1,80 @@
 <!doctype html>
 <html>
-  <head>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-  <h1 id="title">hopeless phantom<br>manga</h1>
-  <p id="description">Hello!! <small>and</small> welcome to our legend family, register now !!!</p>
-</header>
-<main>
-  <form id="survey-form" active="">
-    <section>
-      <label for="name" id="name-label">Name:</label><br>
-      <input id="name" type="text" placeholder="ex: hopeless phantom" name="survey" required><br>
-      <label for="email" id="email-label">Email:</label><br>
-      <input id="email" type="email" placeholder="ex: hopeless333@gmail.com" name="survey" required><br>
-      <label>Passweord:<br><input type="password" placeholder="ex: hopeless333" required></label><br>
-      <label for="number" id="number-label">Number:<small> (optional)</small></label><br>
-      <input id="number" type="number" placeholder="ex: 0712345678" min="0500000000" max="0799999999" name="survey"><br>
-      <label for="birthday">Birthday: <small>(optional)</small></label><br>
-      <input id="birthday" type="date" name="survey"><br>
-      <label for"dropdown">Select your state:</label><br>
-      <select id="dropdown" name="survey">
-        <option value="student">student</option>
-        <option value="employed">employed</option>
-        <option value="rested">rested</option>
-        <option value="other">other</option>
-      </select>
-    </section>
-    <fieldset>
-      <legend>your sex class</legend>
-      <label>male<input type="radio" value="male" name="sex" checked></label>
-      <label>female<input type="radio" value="female" name="sex"></label>
-      <label>other<input type="radio" value="other" name="sex"></label>
-    </fieldset>
-    <fieldset>
-      <legend>your favorite manga</legend>
-      <table>
-        <tr>
-          <td><label><input type="checkbox" value="attack on titans">attack on titans</label></td>
-          <td><label><input type="checkbox" value="naruto boruto">naruto boruto</label></td>
-        </tr>
-        <tr>
-          <td><label><input type="checkbox" value="Demon Slayer">Demon Slayer</label></td>
-          <td><label><input type="checkbox" value="death note">death note</label></td>
-        </tr>
-        <tr>
-          <td><label><input type="checkbox" value="black clover">black clover</label></td>
-          <td><label><input type="checkbox" value="black butler" checked>black butler</label></td>
-        </tr>
-      </table>
-    </fieldset>
-    <label>comments:<br><textarea type="text" placeholder="ex: add one piece to list please" rows="3" cols="30"></textarea></label><br>
-    <input id="submit" type="submit" name="survey"><br>
-  </form>
-</main>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">hopeless phantom<br>manga</h1>
+    <p id="description">Hello!! <small>and</small> welcome to our legend family, register now !!!</p>
+  </header>
+  <main>
+    <form id="survey-form" action="">
+      <section id="s1">
+        <div id="s1-div">
+          <label for="name" id="name-label">Name:</label><br>
+          <input id="name" type="text" placeholder="ex: hopeless phantom" name="survey" required><br>
+          <label for="email" id="email-label">Email:</label><br>
+          <input id="email" type="email" placeholder="ex: hopeless333@gmail.com" name="survey" required><br>
+          <label>Passweord:<br><input type="password" placeholder="ex: hopeless333" required></label><br>
+          <label for="number" id="number-label">Number:<small> (optional)</small></label><br>
+          <input id="number" type="number" placeholder="ex: 0712345678" min="0500000000" max="0799999999" name="survey"><br>
+          <label for="birthday">Birthday: <small>(optional)</small></label><br>
+          <input id="birthday" type="date" name="survey"><br>
+          <label for"dropdown">my favorite genre:</label><br>
+          <select id="dropdown" name="survey">
+            <option value="actions">actions</option>
+            <option value="mystery">mystery</option>
+            <option value="comedy">comedy</option>
+            <option value="drama">drama</option>
+            <option value="horror">horror</option>
+          </select>
+        </div>
+      </section>
+      <section id="s2">
+        <fieldset id="manga">
+          <legend>my favorite manga</legend>
+          <table>
+            <tr>
+              <td><img src="../images/eren.png" alt="eren"><label><input type="checkbox" value="attack on titans">attack on titans</label></td>
+              <td><img src="../images/boruto.png" alt="boruto"><label><input type="checkbox" value="naruto boruto">naruto boruto</label></td>
+            </tr>
+            <tr>
+              <td><img src="../images/tanjiro.png" alt="tanjiro"><label><input type="checkbox" value="Demon Slayer" checked>Demon Slayer</label></td>
+              <td><img src="../images/shinigami.png" alt="shinigami"><label><input type="checkbox" value="death note">death note</label></td>
+            </tr>
+            <tr>
+              <td><img src="../images/asta.png" alt="asta"<label><input type="checkbox" value="black clover">black clover</label></td>
+              <td><img src="../images/ciel.png" alt="ciel"><label><input type="checkbox" value="black butler">black butler</label></td>
+            </tr>
+            <tr>
+          </table>
+        </fieldset>
+      </section>
+      <section id="s3">
+        <fieldset id="sex">
+          <legend>my sex genre</legend>
+          <label><input type="radio" value="male" name="sex" checked>male</label>
+          <label><input type="radio" value="female" name="sex">female</label>
+          <label><input type="radio" value="other" name="sex">other</label>
+        </fieldset>
+        <fieldset id="submit-field">
+          <legend>submit to regist</legend>
+          <div id="comment"><label>comments:<br><textarea type="text" placeholder="ex: add one piece to list please" rows="5" cols="30"></textarea></label><br></div>
+          <div id="submit-div"><input id="submit" type="submit" name="survey"></div><br>
+        </fieldset>
+      </section>
+    </form>
+  </main>
+  <footer>&copy; 2021 abbani billal</footer>
+
+
+  <script src="script.js">
+    
+  </script>
+</body>
+
 </html>
