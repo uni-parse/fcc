@@ -40,10 +40,10 @@ button {
   padding: 4px;
 }
 img {
-  width: 100px;
+  width: 10vw;
   position: relative;
-  bottom: 28px;
-  left: 45px;
+  bottom:;
+  left:;
 }
 figcaption {
   position: absolute;
@@ -64,6 +64,7 @@ main {
 iframe {
   width: 94vw;
   height: 55vw;
+  border:none;
   border-radius: 5%;
   padding: 3px;
   background: linear-gradient(var(--deg), #111, #555);
