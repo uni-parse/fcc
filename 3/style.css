@@ -3,8 +3,8 @@
 }
 @media (orientation:landscape) {
   iframe {
-    width: 45vmin !important;
-    height: 20vmin !important;
+    width: 80vw !important;
+    height: 50vw !important;
   }
   body{background-image:url("../images/s21-l.jpeg") !important;}
 }
