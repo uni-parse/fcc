@@ -28,10 +28,10 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: yellow;
+  color: orange;
 }
 a:visited {
-  color: lightGreen;
+  color: yellow;
 }
 button {
   background: linear-gradient(var(--deg), #b1f, #19f);
@@ -62,12 +62,12 @@ main {
   color: #1cf;
 }
 iframe {
-  width: 94vmin;
-  height: 55vmin;
+  width: 94vw;
+  height: 55vw;
   border-radius: 5%;
   padding: 3px;
-  background: linear-gradient(var(--deg), #b1f, #19f);
-  animation-name: video 1.2s linear infinite;
+  background: linear-gradient(var(--deg), #f70, #fd0);
+  animation: video 1.2s linear infinite;
 }
 @keyframes video {
   12.5% {--deg: 45deg;}
