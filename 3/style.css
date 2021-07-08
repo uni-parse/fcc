@@ -1,20 +1,18 @@
 :root {
-  --deg: -45deg;
+  --deg: 0deg;
 }
-@media (min-width: 900px) {
+@media (orientation:landscape) {
   iframe {
-    width: 45vmin;
-    height: 20vmin;
+    width: 45vmin !important;
+    height: 20vmin !important;
   }
+  body{background-image:url("../images/s21-l") !important;}
 }
 body {
   text-align: center;
   font-family: rosemary, monospace;
   color: lightGray;
-  background: url("https://drive.google.com/thumbnail?id=1yzMTRmvG7KDd34Mdq2rVp8jDPma79New");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background:#222 url("../images/s21-p") 0/cover fixed no-repeat;
 }
 #header {
   display: flex;
@@ -27,7 +25,7 @@ body {
 #nav-bar {
 }
 a {
-  text-decoration: nonel;
+  text-decoration: none;
 }
 a:link {
   color: yellow;
@@ -66,16 +64,12 @@ main {
 iframe {
   width: 94vmin;
   height: 55vmin;
-  border-radius: 27% 5% 15% 5%;
-  padding: 2px;
+  border-radius: 5%;
+  padding: 3px;
   background: linear-gradient(var(--deg), #b1f, #19f);
-  animation-name: video;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation-name: video 1.2s linear infinite;
 }
-/*@keyframes video {
-  0% {--deg: 0deg;}
+@keyframes video {
   12.5% {--deg: 45deg;}
   25% {--deg: 90deg;}
   37.5% {--deg: 135deg;}
@@ -84,4 +78,4 @@ iframe {
   75% {--deg: 270deg;}
   87.5% {--deg: 315deg;}
   100% {--deg: 360deg;}
-}*/
+}
