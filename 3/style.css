@@ -35,7 +35,7 @@ a:visited {
 }
 button {
   background: linear-gradient(var(--deg), #b1f, #19f);
-  color: yellow;
+  color: lightgray;
   border-radius: 30% 8% 17% 8%;
   padding: 4px;
 }
