@@ -67,7 +67,7 @@ iframe {
   border:none;
   border-radius: 5%;
   padding: 3px;
-  background: linear-gradient(var(--deg), #111, #555);
+  background: linear-gradient(var(--deg), #000, #666);
   animation: video 1.3s linear infinite;
 }
 @keyframes video {
