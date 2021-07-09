@@ -11,17 +11,19 @@
     <h1 id="title">hopeless phantom<br>manga</h1>
     <p id="description">Hello!! <small>and</small> welcome to our legend family, register now !!!</p>
   </header>
+  
   <main>
     <form id="survey-form" action="">
       <section id="s1">
         <div id="s1-div">
-          <label for="name" id="name-label">Name:</label><br>
-          <input id="name" type="text" placeholder="ex: hopeless phantom" name="survey" required><br>
           <label for="email" id="email-label">Email:</label><br>
           <input id="email" type="email" placeholder="ex: hopeless333@gmail.com" name="survey" required><br>
-          <label>Passweord:<br><input type="password" placeholder="ex: hopeless333" required></label><br>
+          <label for="password">Passweord:</lable><br>
+          <input type="password" placeholder="ex: hopeless333" required><br>
+          <label for="name" id="name-label">Name:</label><br>
+          <input id="name" type="text" placeholder="ex: hopeless phantom" name="survey" required><br>
           <label for="number" id="number-label">Number:<small> (optional)</small></label><br>
-          <input id="number" type="number" placeholder="ex: 0712345678" min="0500000000" max="0799999999" name="survey"><br>
+          <input id="number" type="number" placeholder="ex: 0711223344" min="0500000000" max="0799999999" name="survey"><br>
           <label for="birthday">Birthday: <small>(optional)</small></label><br>
           <input id="birthday" type="date" name="survey"><br>
           <label for"dropdown">my favorite genre:</label><br>
@@ -39,16 +41,16 @@
           <legend>my favorite manga</legend>
           <table>
             <tr>
-              <td><img src="../images/eren.png" alt="eren"><label><input type="checkbox" value="attack on titans">attack on titans</label></td>
-              <td><img src="../images/boruto.png" alt="boruto"><label><input type="checkbox" value="naruto boruto">naruto boruto</label></td>
+              <td><img src="../images/eren.png" alt="eren"><label><input type="checkbox" value="attack on titans"><br>Attack<br>on<br>titans</label></td>
+              <td><img src="../images/boruto.png" alt="boruto"><label><input type="checkbox" value="naruto boruto"><br>Naruto<br>boruto</label></td>
             </tr>
             <tr>
-              <td><img src="../images/tanjiro.png" alt="tanjiro"><label><input type="checkbox" value="Demon Slayer" checked>Demon Slayer</label></td>
-              <td><img src="../images/shinigami.png" alt="shinigami"><label><input type="checkbox" value="death note">death note</label></td>
+              <td><img src="../images/tanjiro.png" alt="tanjiro"><label><input type="checkbox" value="Demon Slayer" checked><br>Demon<br>Slayer</label></td>
+              <td><img src="../images/shinigami.png" alt="shinigami"><label><input type="checkbox" value="death note"><br>Death<br>note</label></td>
             </tr>
             <tr>
-              <td><img src="../images/asta.png" alt="asta"<label><input type="checkbox" value="black clover">black clover</label></td>
-              <td><img src="../images/ciel.png" alt="ciel"><label><input type="checkbox" value="black butler">black butler</label></td>
+              <td><img src="../images/asta.png" alt="asta"<label><input type="checkbox" value="black clover"><br>Black<br>clover</label></td>
+              <td><img src="../images/dororo.png" alt="dororo"><label><input type="checkbox" value="dororo"><br>Dororo</label></td>
             </tr>
             <tr>
           </table>
@@ -63,8 +65,8 @@
         </fieldset>
         <fieldset id="submit-field">
           <legend>submit to regist</legend>
-          <div id="comment"><label>comments:<br><textarea type="text" placeholder="ex: add one piece to list please" rows="5" cols="30"></textarea></label><br></div>
-          <div id="submit-div"><input id="submit" type="submit" name="survey"></div><br>
+          <div id="comment-div"><label>comments:<br><textarea type="text" placeholder="ex: add { One Piece } to list please" rows="5" cols="30"></textarea></label></div><br>
+          <div id="submit-div"><input id="submit" type="submit" name="survey"></div>
         </fieldset>
       </section>
     </form>
