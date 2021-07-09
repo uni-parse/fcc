@@ -14,7 +14,7 @@ form {
     transparent 5vmin,rgba(100,255,0,.1) 10vmin,
     rgba(100,255,0,.1) 10vmin,transparent 15vmin,
     transparent 15vmin,rgba(0,155,255,.1) 20vmin) 0/cover repeat-y;
-  animation: form 10s ease 1;
+  animation: form 10s ease 5;
   display:flex;
   justify-content:space-between;
   text-align:stretch;
