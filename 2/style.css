@@ -57,6 +57,7 @@ input::placeholder,textarea::placeholder{
 	color:#0bf;
 	opacity:0.9;
 	text-align:center;
+        font-size:1rem;
 }
 input[type="email"]{
 	background:#333 url("../images/email.png") .2rem/1rem no-repeat ;
