@@ -63,17 +63,17 @@ select,textarea{
 input{
 	background-color:rgba(125,255,0,.05) !important;
 	color:#f70;
-	padding:.2rem .2rem .2rem 2rem;
+	padding:1.5vmin 4vmin 1.5vmin 6vmin;
 	border:none;
 	border-bottom:solid #7f0;
 	border-radius:30%;
-  height:5vmin;
+        font-size:3vmin;
 }
 input::placeholder,textarea::placeholder,select{
 	color:#0bf;
 	opacity:0.9;
 	text-align:center;
-  font-size:3vmin;
+        font-size:2.5vmin;
 }
 input:focus,textarea:focus{
 	outline:none;
@@ -81,29 +81,29 @@ input:focus,textarea:focus{
 	border-top:solid #7f0;
 }
 input[type="email"]{
-	background:url("../images/email.png") .2em/1em no-repeat ;
+	background:url("../images/email.png") .8vmin/4vmin no-repeat ;
 	width:90%;
-	min-width:13em;
+	min-width:52vmin;
 }
 input[type="password"]{
-	background:url("../images/password.png") .2em/1em no-repeat ;
+	background:url("../images/password.png") .8vmin/4vmin no-repeat ;
 	width:80%;
-	min-width:11em;
+	min-width:44vmin;
 }
 input[type="text"]{
-	background:url("../images/username.png") .2em/1em no-repeat ;
+	background:url("../images/username.png") .8vmin/4vmin no-repeat ;
 	width:60%;
-	min-width:9em;
+	min-width:36vmin;
 }
 input[type="number"]{
-	background:url("../images/phone.png") .2em/1em no-repeat ;
+	background:url("../images/phone.png") .8vmin/4vmin no-repeat ;
   width:40%;
-	min-width:6.5em;
+	min-width:26vmin;
 }
 input[type="date"]{
-	background:url("../images/date.png") .2em/1em no-repeat ;
+	background:url("../images/date.png") .8vmin/4vmin no-repeat ;
 	width:20%;
-	min-width:4em;
+	min-width:16vmin;
 }
 #submit{
 	background:rgba(0,155,255,.5);
