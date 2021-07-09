@@ -22,7 +22,7 @@ form {
   padding:2vmin;
 }
 #sex,#manga,#submit-field,#s1{
-	border:none;
+  border:none;
   border-right: solid hsl(20,100%,50%) .07rem;
   border-bottom:solid hsl(20,100%,50%) .07rem;
   box-shadow:.3rem .3rem 20px hsl(20,100%,30%);
@@ -87,7 +87,8 @@ input[type="date"]{
 }
 select,textarea{
 	background:#333;
-	color:#f70;
+	color:#07f;
+        font-size:3vmin;
 	border:none;
 	border-top:solid #7f0;
 	border-bottom:solid #7f0;
