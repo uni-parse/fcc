@@ -3,7 +3,7 @@ body {
   background:#222 url("../images/map-landscape.jpg") 0/cover fixed no-repeat;
   color: lightgray;
   text-align:center;
-  font-size:1em;
+  font-size:4vmin;
 }
 header {
 }
