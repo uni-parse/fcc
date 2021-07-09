@@ -11,6 +11,7 @@
 body {
   text-align: center;
   font-family: rosemary, monospace;
+  font-size:4rem;
   color: lightGray;
   background:#222 url("../images/s21-p.jpeg") 0/cover fixed no-repeat;
 }
