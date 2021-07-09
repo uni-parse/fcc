@@ -45,6 +45,7 @@ img{max-width:50%;height:auto;float:right;margin:0;}
 #sex{display:inline;padding:1vh 2vw 1vh 2vw;border-radius:30% 30% 50% 50%;}
 #submit-field{border-radius:20% 20% 60% 60%;}
 #comment-div{display:flex;justify-content:center;}
+legend{color:#9f0;}
 textarea{border-radius:8%;padding:4vmin;}
 input{
 	color:#f70;
@@ -57,7 +58,7 @@ input::placeholder,textarea::placeholder{
 	color:#0bf;
 	opacity:0.9;
 	text-align:center;
-        font-size:1rem;
+        font-size:3vmin;
 }
 input[type="email"]{
 	background:#333 url("../images/email.png") .2rem/1rem no-repeat ;
