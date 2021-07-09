@@ -22,9 +22,9 @@ form {
   padding:2vmin;
 }
 @keyframes form{
-	50%{
-		background-position:0 200px;
-	}
+  50%{
+    background-position:0 200px;
+  }
 }
 #sex,#manga,#submit-field,#s1{
   border:none;
@@ -53,64 +53,64 @@ img{max-width:50%;height:auto;float:right;margin:0;}
 legend{color:#9f0;}
 textarea{color:#f70;border-radius:8%;padding:4vmin;height:auto !important;}
 select,textarea{
-	background:rgba(125,255,0,.05);
-	border:none;
-	border-top:solid #7f0;
-	border-bottom:solid #7f0;
-	border-radius:30%;
+  background:rgba(125,255,0,.05);
+  border:none;
+  border-top:solid #7f0;
+  border-bottom:solid #7f0;
+  border-radius:30%;
   height:5vmin;
 }
 input{
-	background-color:rgba(125,255,0,.05) !important;
-	color:#f70;
-	padding:1.5vmin 4vmin 1.5vmin 6vmin;
-	border:none;
-	border-bottom:solid #7f0;
-	border-radius:30%;
-        font-size:3vmin;
+  background-color:rgba(125,255,0,.05) !important;
+  color:#f70;
+  padding:1.5vmin 4vmin 1.5vmin 6vmin;
+  border:none;
+  border-bottom:solid #7f0;
+  border-radius:30%;
+  font-size:3vmin;
 }
 input::placeholder,textarea::placeholder,select{
-	color:#0bf;
-	opacity:0.9;
-	text-align:center;
-        font-size:2.5vmin;
+  color:#0bf;
+  opacity:0.9;
+  text-align:center;
+  font-size:2.5vmin;
 }
 input:focus,textarea:focus{
-	outline:none;
-	background-color:rgba(0,170,255,.2) !important;
-	border-top:solid #7f0;
+  outline:none;
+  background-color:rgba(0,170,255,.2) !important;
+  border-top:solid #7f0;
 }
 input[type="email"]{
-	background:url("../images/email.png") .8vmin/4vmin no-repeat ;
-	width:90%;
-	min-width:52vmin;
+  background:url("../images/email.png") .8vmin/4vmin no-repeat ;
+  width:90%;
+  min-width:52vmin;
 }
 input[type="password"]{
-	background:url("../images/password.png") .8vmin/4vmin no-repeat ;
-	width:80%;
-	min-width:44vmin;
+  background:url("../images/password.png") .8vmin/4vmin no-repeat ;
+  width:80%;
+  min-width:44vmin;
 }
 input[type="text"]{
-	background:url("../images/username.png") .8vmin/4vmin no-repeat ;
-	width:60%;
-	min-width:36vmin;
+  background:url("../images/username.png") .8vmin/4vmin no-repeat ;
+  width:60%;
+  min-width:36vmin;
 }
 input[type="number"]{
-	background:url("../images/phone.png") .8vmin/4vmin no-repeat ;
+  background:url("../images/phone.png") .8vmin/4vmin no-repeat ;
   width:40%;
-	min-width:26vmin;
+  min-width:26vmin;
 }
 input[type="date"]{
-	background:url("../images/date.png") .8vmin/4vmin no-repeat ;
-	width:20%;
-	min-width:16vmin;
+  background:url("../images/date.png") .8vmin/4vmin no-repeat ;
+  width:20%;
+  min-width:16vmin;
 }
 #submit{
-	background:rgba(0,155,255,.5);
-	color:hsl(15,100%,55%);
-	border-radius:20% 50% 20% 20%;
-	border-right:white solid;
-	height:auto;
+  background:rgba(0,155,255,.5);
+  color:hsl(15,100%,55%);
+  border-radius:20% 50% 20% 20%;
+  border-right:white solid;
+  height:auto;
   font-size:3vmin;
   padding:1.5vmin;
 }
@@ -134,10 +134,10 @@ input[type="date"]{
   animation:submit-b 4s ease-out infinite;
 }
 @keyframes submit-b{
-	20%{bottom:.8em;left:.22em;}
-	40%{bottom:.8em;left:2.3em;}
-	60%{bottom:0.2em;left:3.3em;}
-	80%{bottom:-.8em;left:3.3em;}
+  20%{bottom:.8em;left:.22em;}
+  40%{bottom:.8em;left:2.3em;}
+  60%{bottom:0.2em;left:3.3em;}
+  80%{bottom:-.8em;left:3.3em;}
 }
 #submit-div:after{
   content:"";
@@ -152,10 +152,10 @@ input[type="date"]{
   animation:submit-a 4s ease-in infinite;
 }
 @keyframes submit-a{
-	20%{bottom:-.8em;left:-3.3em;}
-	40%{bottom:.8em;left:-3.3em;}
-	60%{bottom:.8em;left:-1em;}
-	80%{bottom:0.2em;left:-0.25em;}
+  20%{bottom:-.8em;left:-3.3em;}
+  40%{bottom:.8em;left:-3.3em;}
+  60%{bottom:.8em;left:-1em;}
+  80%{bottom:0.2em;left:-0.25em;}
 }
 @media only screen and (orientation:portrait){
   body{background-image:url("../images/map-portrait.jpg");}
