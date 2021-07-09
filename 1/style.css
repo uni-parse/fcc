@@ -6,6 +6,7 @@ body {
   color: lightGray;
   background:#222 url("../images/joseph.jpg") fixed no-repeat;
   background-size:cover;
+  font-size:4vmin;
 }
 #tribute-info {
   text-align: justify;
