@@ -5,21 +5,26 @@ body {
   text-align:center;
   font-size:4vmin;
 }
-header {
-}
+header {margin-bottom:40vh;}
 form {
-  background: repeating-linear-gradient(60deg,
-    rgba(0,155,255,.2) 0vmin,transparent 5vmin,
-    transparent 5vmin,rgba(255,70,0,.2) 10vmin,
-    rgba(255,70,0,.2) 10vmin,transparent 15vmin,
-    transparent 15vmin,rgba(100,255,0,.2) 20vmin,
-    rgba(100,255,0,.2) 20vmin,transparent 25vmin,
-    transparent 25vmin,rgba(0,155,255,.2) 30vmin);
+  background: repeating-linear-gradient(0deg,
+    rgba(0,155,255,.1) 0vmin,transparent 5vmin,
+    /*transparent 5vmin,rgba(255,70,0,.1) 10vmin,
+    rgba(255,70,0,.1) 10vmin,transparent 15vmin,*/
+    transparent 5vmin,rgba(100,255,0,.1) 10vmin,
+    rgba(100,255,0,.1) 10vmin,transparent 15vmin,
+    transparent 15vmin,rgba(0,155,255,.1) 20vmin) 0/cover repeat-y;
+  animation: form 10s ease 1;
   display:flex;
   justify-content:space-between;
   text-align:stretch;
   border-radius: 5%;
   padding:2vmin;
+}
+@keyframes form{
+	50%{
+		background-position:0 200px;
+	}
 }
 #sex,#manga,#submit-field,#s1{
   border:none;
@@ -46,62 +51,68 @@ img{max-width:50%;height:auto;float:right;margin:0;}
 #submit-field{border-radius:20% 20% 60% 60%;}
 #comment-div{display:flex;justify-content:center;}
 legend{color:#9f0;}
-textarea{border-radius:8%;padding:4vmin;}
+textarea{color:#f70;border-radius:8%;padding:4vmin;height:auto !important;}
 select,textarea{
-	background:#333;
+	background:rgba(125,255,0,.05);
 	border:none;
 	border-top:solid #7f0;
 	border-bottom:solid #7f0;
 	border-radius:30%;
-        height:5vmin;
+  height:5vmin;
 }
 input{
+	background-color:rgba(125,255,0,.05) !important;
 	color:#f70;
 	padding:.2rem .2rem .2rem 2rem;
 	border:none;
-	border-bottom:solid #7f0 ;
+	border-bottom:solid #7f0;
 	border-radius:30%;
-        height:5vmin;
+  height:5vmin;
 }
 input::placeholder,textarea::placeholder,select{
 	color:#0bf;
 	opacity:0.9;
 	text-align:center;
-        font-size:3vmin;
+  font-size:3vmin;
+}
+input:focus,textarea:focus{
+	outline:none;
+	background-color:rgba(0,170,255,.2) !important;
+	border-top:solid #7f0;
 }
 input[type="email"]{
-	background:#333 url("../images/email.png") .2em/1em no-repeat ;
+	background:url("../images/email.png") .2em/1em no-repeat ;
 	width:90%;
-	min-width:13rem;
+	min-width:13em;
 }
 input[type="password"]{
-	background:#333 url("../images/password.png") .2em/1em no-repeat ;
+	background:url("../images/password.png") .2em/1em no-repeat ;
 	width:80%;
-	min-width:11rem;
+	min-width:11em;
 }
 input[type="text"]{
-	background:#333 url("../images/username.png") .2em/1em no-repeat ;
+	background:url("../images/username.png") .2em/1em no-repeat ;
 	width:60%;
-	min-width:9rem;
+	min-width:9em;
 }
 input[type="number"]{
-	background:#333 url("../images/phone.png") .2em/1em no-repeat ;
+	background:url("../images/phone.png") .2em/1em no-repeat ;
   width:40%;
-	min-width:6.5rem;
+	min-width:6.5em;
 }
 input[type="date"]{
-	background:#333 url("../images/date.png") .2em/1em no-repeat ;
+	background:url("../images/date.png") .2em/1em no-repeat ;
 	width:20%;
-	min-width:4rem;
+	min-width:4em;
 }
 #submit{
 	background:rgba(0,155,255,.5);
 	color:hsl(15,100%,55%);
-	padding:.5em;
 	border-radius:20% 50% 20% 20%;
 	border-right:white solid;
 	height:auto;
-        font:size:3vmin;
+  font-size:3vmin;
+  padding:1.5vmin;
 }
 #submit-div{
   border:none;
@@ -119,14 +130,14 @@ input[type="date"]{
   border-radius:50%;
   box-shadow:0 0 20px .3em #f70;
   left:.22em;
-  bottom:-1em;
+  bottom:-.8em;
   animation:submit-b 4s ease-out infinite;
 }
 @keyframes submit-b{
-	20%{bottom:1em;left:.22em;}
-	40%{bottom:1em;left:2.7em;}
-	60%{bottom:0.2em;left:4em;}
-	80%{bottom:-1em;left:4em;}
+	20%{bottom:.8em;left:.22em;}
+	40%{bottom:.8em;left:2.3em;}
+	60%{bottom:0.2em;left:3.3em;}
+	80%{bottom:-.8em;left:3.3em;}
 }
 #submit-div:after{
   content:"";
@@ -137,13 +148,13 @@ input[type="date"]{
   border-radius:50%;
   box-shadow:0 0 20px .3em #7f0;
   left:-.22em;
-  bottom:-1em;
+  bottom:-.8em;
   animation:submit-a 4s ease-in infinite;
 }
 @keyframes submit-a{
-	20%{bottom:-1em;left:-4em;}
-	40%{bottom:1em;left:-4em;}
-	60%{bottom:1em;left:-1.4em;}
+	20%{bottom:-.8em;left:-3.3em;}
+	40%{bottom:.8em;left:-3.3em;}
+	60%{bottom:.8em;left:-1em;}
 	80%{bottom:0.2em;left:-0.25em;}
 }
 @media only screen and (orientation:portrait){
