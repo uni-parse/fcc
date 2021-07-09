@@ -65,7 +65,7 @@ main {
   border-radius: 5%;
   padding: .5vmin;
   background: linear-gradient(var(--deg),transparent,#f70,transparent/*,#7f0*/);
-  animation: video 1.2s linear infinite;
+  animation: video 1.8s ease infinite;
 }
 @keyframes video {
   12.5% {--deg: 45deg;}
@@ -92,7 +92,7 @@ main {
 	border-right:solid #7f0;
 }
 input[type="email"]::placeholder{font-size:3vmin;}
-#detailes{
+#ditailes{
 	margin:20vmin auto;
 	text-align:justify;
 	width:80%;
