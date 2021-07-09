@@ -39,9 +39,10 @@ td{text-align:center;}
 #s1{border-radius:15% 30% 100% 20%;min-height:100%;}
 #s1-div{width:30vw;min-width:15rem;min-height:90%}
 #manga{min-width:30%;margin-right:5%;}
-#sex{display:inline;padding:1vh 2vw 1vh 2vw;border-radius:30% 30% 50% 50%;}
 table,#s1-div{text-align:left;margin:auto;}
 img{max-width:50%;height:auto;float:right;margin:0;}
+#s3{align-self:center;}
+#sex{display:inline;padding:1vh 2vw 1vh 2vw;border-radius:30% 30% 50% 50%;}
 #submit-field{border-radius:20% 20% 60% 60%;}
 #comment-div{display:flex;justify-content:center;}
 textarea{border-radius:8%;padding:4vmin;}
