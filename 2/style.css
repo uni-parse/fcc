@@ -70,42 +70,42 @@ input::placeholder,textarea::placeholder,select{
         font-size:3vmin;
 }
 input[type="email"]{
-	background:#333 url("../images/email.png") .2rem/1rem no-repeat ;
+	background:#333 url("../images/email.png") .2em/1em no-repeat ;
 	width:90%;
 	min-width:13rem;
 }
 input[type="password"]{
-	background:#333 url("../images/password.png") .2rem/1rem no-repeat ;
+	background:#333 url("../images/password.png") .2em/1em no-repeat ;
 	width:80%;
 	min-width:11rem;
 }
 input[type="text"]{
-	background:#333 url("../images/username.png") .2rem/1rem no-repeat ;
+	background:#333 url("../images/username.png") .2em/1em no-repeat ;
 	width:60%;
 	min-width:9rem;
 }
 input[type="number"]{
-	background:#333 url("../images/phone.png") .2rem/1rem no-repeat ;
+	background:#333 url("../images/phone.png") .2em/1em no-repeat ;
   width:40%;
 	min-width:6.5rem;
 }
 input[type="date"]{
-	background:#333 url("../images/date.png") .2rem/1rem no-repeat ;
+	background:#333 url("../images/date.png") .2em/1em no-repeat ;
 	width:20%;
 	min-width:4rem;
 }
 #submit{
 	background:rgba(0,155,255,.5);
 	color:hsl(15,100%,55%);
-	padding:.5rem;
+	padding:.5em;
 	border-radius:20% 50% 20% 20%;
 	border-right:white solid;
 	height:auto;
+        font:size:3vmin;
 }
 #submit-div{
   border:none;
   margin:auto;
-  padding:0;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -114,41 +114,41 @@ input[type="date"]{
   content:"";
   background:#f70;
   position:relative;
-  width:.3rem;
-  height:.3rem;
+  width:.3em;
+  height:.3em;
   border-radius:50%;
-  box-shadow:0 0 20px .3rem #f70;
-  left:.22rem;
-  bottom:-1rem;
+  box-shadow:0 0 20px .3em #f70;
+  left:.22em;
+  bottom:-1em;
   animation:submit-b 4s ease-out infinite;
 }
 @keyframes submit-b{
-	20%{bottom:1rem;left:.22rem;}
-	40%{bottom:1rem;left:2.7rem;}
-	60%{bottom:0.2rem;left:4rem;}
-	80%{bottom:-1rem;left:4rem;}
+	20%{bottom:1em;left:.22em;}
+	40%{bottom:1em;left:2.7em;}
+	60%{bottom:0.2em;left:4em;}
+	80%{bottom:-1em;left:4em;}
 }
 #submit-div:after{
   content:"";
   background:#7f0;
   position:relative;
-  width:.3rem;
-  height:.3rem;
+  width:.3em;
+  height:.3em;
   border-radius:50%;
-  box-shadow:0 0 20px .3rem #7f0;
-  left:-.22rem;
-  bottom:-1rem;
+  box-shadow:0 0 20px .3em #7f0;
+  left:-.22em;
+  bottom:-1em;
   animation:submit-a 4s ease-in infinite;
 }
 @keyframes submit-a{
-	20%{bottom:-1rem;left:-4rem;}
-	40%{bottom:1rem;left:-4rem;}
-	60%{bottom:1rem;left:-1.4rem;}
-	80%{bottom:0.2rem;left:-0.25rem;}
+	20%{bottom:-1em;left:-4em;}
+	40%{bottom:1em;left:-4em;}
+	60%{bottom:1em;left:-1.4em;}
+	80%{bottom:0.2em;left:-0.25em;}
 }
 @media only screen and (orientation:portrait){
   body{background-image:url("../images/map-portrait.jpg");}
   form{flex-direction:column !important;}
-  #s1-div,#sex{width:90vw;min-width:15rem;}
+  #s1-div,#sex{width:90vw;min-width:15em;}
   #manga{margin:0;}
 }
