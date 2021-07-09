@@ -5,73 +5,22 @@ body {
   text-align:center;
   font-size:1em;
 }
-@media only screen and (orientation:portrait){
-  body{background-image:url("../images/map-portrait.jpg");}
-  form{flex-direction:column !important;}
-}
 header {
 }
-main{
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
 form {
-   background: repeating-linear-gradient(60deg,
-    rgba(0,155,255,.5) 0vmin,transparent 5vmin,
-    transparent 5vmin,rgba(255,70,0,0.5) 10vmin,
-    rgba(255,70,0,0.5) 10vmin,transparent 15vmin,
-    transparent 15vmin,rgba(100,255,0,.5) 20vmin,
-    rgba(100,255,0,.5) 20vmin,transparent 25vmin,
-    transparent 25vmin,rgba(0,155,255,.5) 30vmin
-  );
+  background: repeating-linear-gradient(60deg,
+    rgba(0,155,255,.2) 0vmin,transparent 5vmin,
+    transparent 5vmin,rgba(255,70,0,.2) 10vmin,
+    rgba(255,70,0,.2) 10vmin,transparent 15vmin,
+    transparent 15vmin,rgba(100,255,0,.2) 20vmin,
+    rgba(100,255,0,.2) 20vmin,transparent 25vmin,
+    transparent 25vmin,rgba(0,155,255,.2) 30vmin);
   display:flex;
   justify-content:space-between;
-  text-align:center;
+  text-align:stretch;
   border-radius: 5%;
   padding:2vmin;
 }
-input{
-	color:#f70;
-	padding:.2rem .2rem .2rem 2rem;
-	border:none;
-	border-bottom:solid #7f0 ;
-	border-radius:30%;
-}
-input::placeholder,textarea::placeholder{
-	color:#0bf;
-	opacity:0.9;
-}
-input[type="text"]{
-	background:#333 url("../images/username.png") .2rem/1rem no-repeat ;
-	width:13rem;
-}
-input[type="email"]{
-	background:#333 url("../images/email.png") .2rem/1rem no-repeat ;
-}
-input[type="password"]{
-	background:#333 url("../images/password.png") .2rem/1rem no-repeat ;
-	width:9rem;
-}
-input[type="number"]{
-	background:#333 url("../images/phone.png") .2rem/1rem no-repeat ;
-}
-input[type="date"]{
-	background:#333 url("../images/date.png") .2rem/1rem no-repeat ;
-	width:4rem;
-}
-/*input[type="checkbox"]{background:red;color:yellow;width:;}
-input[type="radio"]{background:;width:;}*/
-select,textarea{
-	background:#333;
-	color:#f70;
-	border:none;
-	border-top:solid #7f0;
-	border-bottom:solid #7f0;
-	border-radius:30%;
-}
-textarea{border-radius:5%;}
 #sex,#manga,#submit-field,#s1{
 	border:none;
   border-right: solid hsl(20,100%,50%) .07rem;
@@ -86,11 +35,61 @@ textarea{border-radius:5%;}
   justify-content:space-between;
   align-items:center;
 }
-#s1{border-radius:5% 5% 50% 5%;}
-#sex{display:inline;padding:1vh 2vw 1vh 2vw;}
-table,#s1-div,#comment{text-align:left;margin:auto;}
-img{max-width:28%;height:auto;float:right;}
-#s3{margin:auto;}
+td{text-align:center;}
+#s1{border-radius:15% 30% 100% 20%;min-height:100%;}
+#s1-div{width:30vw;min-width:15rem;min-height:90%}
+#manga{min-width:30%;margin-right:5%;}
+#sex{display:inline;padding:1vh 2vw 1vh 2vw;border-radius:30% 30% 50% 50%;}
+table,#s1-div{text-align:left;margin:auto;}
+img{max-width:50%;height:auto;float:right;margin:0;}
+#submit-field{border-radius:20% 20% 60% 60%;}
+#comment-div{display:flex;justify-content:center;}
+textarea{border-radius:8%;padding:4vmin;}
+input{
+	color:#f70;
+	padding:.2rem .2rem .2rem 2rem;
+	border:none;
+	border-bottom:solid #7f0 ;
+	border-radius:30%;
+}
+input::placeholder,textarea::placeholder{
+	color:#0bf;
+	opacity:0.9;
+	text-align:center;
+}
+input[type="email"]{
+	background:#333 url("../images/email.png") .2rem/1rem no-repeat ;
+	width:90%;
+	min-width:13rem;
+}
+input[type="password"]{
+	background:#333 url("../images/password.png") .2rem/1rem no-repeat ;
+	width:80%;
+	min-width:11rem;
+}
+input[type="text"]{
+	background:#333 url("../images/username.png") .2rem/1rem no-repeat ;
+	width:60%;
+	min-width:9rem;
+}
+input[type="number"]{
+	background:#333 url("../images/phone.png") .2rem/1rem no-repeat ;
+  width:40%;
+	min-width:6.5rem;
+}
+input[type="date"]{
+	background:#333 url("../images/date.png") .2rem/1rem no-repeat ;
+	width:20%;
+	min-width:4rem;
+}
+select,textarea{
+	background:#333;
+	color:#f70;
+	border:none;
+	border-top:solid #7f0;
+	border-bottom:solid #7f0;
+	border-radius:30%;
+}
 #submit{
 	background:rgba(0,155,255,.5);
 	color:hsl(15,100%,55%);
@@ -142,4 +141,10 @@ img{max-width:28%;height:auto;float:right;}
 	40%{bottom:1rem;left:-4rem;}
 	60%{bottom:1rem;left:-1.4rem;}
 	80%{bottom:0.2rem;left:-0.25rem;}
+}
+@media only screen and (orientation:portrait){
+  body{background-image:url("../images/map-portrait.jpg");}
+  form{flex-direction:column !important;}
+  #s1-div,#sex{width:90vw;min-width:15rem;}
+  #manga{margin:0;}
 }
