@@ -11,11 +11,9 @@
     <h1 id="title">hopeless phantom<br>manga</h1>
     <p id="description">Hello!! <small>and</small> welcome to our legend family, register now !!!</p>
   </header>
-  
   <main>
     <form id="survey-form" action="">
-      <section id="s1">
-        <div id="s1-div">
+      <section id="start-register">
           <label for="email" id="email-label">Email:</label><br>
           <input id="email" type="email" placeholder="ex: hopeless333@gmail.com" name="survey" required><br>
           <label for="password">Passweord:</lable><br>
@@ -26,7 +24,7 @@
           <input id="number" type="number" placeholder="ex: 0711223344" min="0500000000" max="0799999999" name="survey"><br>
           <label for="birthday">Birthday: <small>(optional)</small></label><br>
           <input id="birthday" type="date" name="survey"><br>
-          <label for"dropdown">my favorite genre:</label><br>
+          <label for"dropdown">favorite genre:</label><br>
           <select id="dropdown" name="survey">
             <option value="actions">actions</option>
             <option value="mystery">mystery</option>
@@ -34,11 +32,9 @@
             <option value="drama">drama</option>
             <option value="horror">horror</option>
           </select>
-        </div>
       </section>
-      <section id="s2">
         <fieldset id="manga">
-          <legend>my favorite manga</legend>
+          <legend>favorite manga</legend>
           <table>
             <tr>
               <td><img src="../images/eren.png" alt="eren"><label><input type="checkbox" value="attack on titans"><br>Attack<br>on<br>titans</label></td>
@@ -55,17 +51,16 @@
             <tr>
           </table>
         </fieldset>
-      </section>
-      <section id="s3">
+      <section id="end-register">
         <fieldset id="sex">
-          <legend>my sex genre</legend>
+          <legend>sex class</legend>
           <label><input type="radio" value="male" name="sex" checked>male</label>
           <label><input type="radio" value="female" name="sex">female</label>
           <label><input type="radio" value="other" name="sex">other</label>
         </fieldset>
         <fieldset id="submit-field">
-          <legend>submit to regist</legend>
-          <div id="comment-div"><label>comments:<br><textarea type="text" placeholder="ex: add { One Piece } to list please" rows="5" cols="30"></textarea></label></div><br>
+          <legend>submit to register</legend>
+          <label>comments<br><textarea id="comment" type="text" placeholder="ex: please add 'One Piece' to list" rows="5" cols="15"></textarea></label><br>
           <div id="submit-div"><input id="submit" type="submit" name="survey"></div>
         </fieldset>
       </section>
