@@ -17,7 +17,7 @@ form {
     transparent 15vmin,rgba(0,155,255,.1) 20vmin) 0/cover repeat-y;
   border-radius: 5%;
   margin:30vh auto;
-  animation: form 10s ease 0;
+  animation: form 10s 3s ease infinite;
 }
 @keyframes form{50%{background-position:0 200px;}
 }
