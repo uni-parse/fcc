@@ -51,7 +51,7 @@ img{max-width:50%;height:auto;float:right;margin:0;}
 #submit-field{border-radius:20% 20% 60% 60%;}
 #comment-div{display:flex;justify-content:center;}
 legend{color:#9f0;}
-textarea{color:#f70;border-radius:8%;padding:4vmin;height:auto !important;}
+textarea{color:#f70;border-radius:8%;padding:4vmin;height:auto !important;width:80%;}
 select,textarea{
   background:rgba(125,255,0,.05);
   border:none;
@@ -104,6 +104,10 @@ input[type="date"]{
   background:url("../images/date.png") .8vmin/4vmin no-repeat ;
   width:20%;
   min-width:16vmin;
+}
+input[type="radio"],input[type="checkbox"]{
+  width:4.5vmin;
+  height:4.5vmin;
 }
 #submit{
   background:rgba(0,155,255,.5);
