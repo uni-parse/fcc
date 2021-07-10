@@ -1,4 +1,5 @@
 html{font-size:2vmin;}
+*{font-size:2vmin:}
 body{
   background-color:#444;
   Color:lightgray;
@@ -19,7 +20,7 @@ body{
   position:relative;
   left:-70vw;
   filter:blur(20px);
-  animation:h1 3s forwards ease-out;
+  animation:h1 4s 2.5s forwards ease-out;
 }
 @keyframes h1{
   100%{left:0px;filter:blur(0px);}
