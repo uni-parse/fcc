@@ -43,7 +43,7 @@ figcaption {
   opacity: 0;
 }
 main {
-  margin-top: 70vh;
+  margin: 70vh 0 20vh 0;
   display:flex;
   flex-direction:column;
 }
@@ -65,7 +65,7 @@ main {
   border-radius: 5%;
   padding: .5vmin;
   background: linear-gradient(var(--deg),transparent,#f70,transparent/*,#7f0*/);
-  animation: video 1.8s ease infinite;
+  animation: video 1.8s 3s ease infinite;
 }
 @keyframes video {
   12.5% {--deg: 45deg;}
