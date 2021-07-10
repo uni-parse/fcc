@@ -15,11 +15,11 @@ body{
 }
 #headdiv{}
 #h1{
-  line-height:2.4em;
-  animation:h1 3s forwards ease-out;
+  line-height:2.4rem;
   position:relative;
   left:-70vw;
   filter:blur(20px);
+  animation:h1 3s forwards ease-out;
 }
 @keyframes h1{
   100%{left:0px;filter:blur(0px);}
@@ -28,7 +28,7 @@ body{
   float:right;
   width:30vw;
   position:relative;
-  animation:headimg 3s forwards ease-out;
+  animation:headimg 4s 2.5s forwards ease-out;
   right:-30vw;
   filter:blur(20px);
 }
@@ -74,9 +74,9 @@ a{
   background-color:rgba(0,0,0,0);
   height:5vmin;
 }
-#img1{animation:img1 5s infinite linear;}
-#img2{animation:img2 5s infinite linear;}
-#img3{animation:img3 5s infinite linear;}
+#img1{animation:img1 5s 1s infinite linear;}
+#img2{animation:img2 5s 1s infinite linear;}
+#img3{animation:img3 5s 1s infinite linear;}
 @keyframes img1{
   0%{opacity:1;}
   12.5%{opacity:0.2;}
