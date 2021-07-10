@@ -1,11 +1,12 @@
+*{box-sizing:border-box;}
 body {
   font-family: rosemary, monospace;
-  background:#222 url("../images/map-landscape.jpg") 0/cover fixed no-repeat;
+  background:#222 url("../images/map-portrait.jpg") 0/cover fixed no-repeat;
   color: lightgray;
   text-align:center;
   font-size:4vmin;
 }
-header {margin-bottom:40vh;}
+/*...........container..........*/
 form {
   background: repeating-linear-gradient(0deg,
     rgba(0,155,255,.1) 0vmin,transparent 5vmin,
@@ -14,52 +15,66 @@ form {
     transparent 5vmin,rgba(100,255,0,.1) 10vmin,
     rgba(100,255,0,.1) 10vmin,transparent 15vmin,
     transparent 15vmin,rgba(0,155,255,.1) 20vmin) 0/cover repeat-y;
-  animation: form 10s ease 5;
-  display:flex;
-  justify-content:space-between;
-  text-align:stretch;
   border-radius: 5%;
-  padding:2vmin;
+  margin:30vh auto;
+  animation: form 10s ease 0;
 }
-@keyframes form{
-  50%{
-    background-position:0 200px;
-  }
+@keyframes form{50%{background-position:0 200px;}
 }
-#sex,#manga,#submit-field,#s1{
-  border:none;
-  border-right: solid hsl(20,100%,50%) .07rem;
-  border-bottom:solid hsl(20,100%,50%) .07rem;
-  box-shadow:.3rem .3rem 20px hsl(20,100%,30%);
-  border-radius: 5%;
-  background:rgba(0,0,0,0.6);
-  padding:5vh 2vw 5vh 2vw;
-  margin:auto;
-  display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-  align-items:center;
-}
-td{text-align:center;}
-#s1{border-radius:15% 30% 100% 20%;min-height:100%;}
-#s1-div{width:30vw;min-width:15rem;min-height:90%}
-#manga{min-width:30%;margin-right:5%;}
-table,#s1-div{text-align:left;margin:auto;}
-img{max-width:50%;height:auto;float:right;margin:0;}
-#s3{align-self:center;}
-#sex{display:inline;padding:1vh 2vw 1vh 2vw;border-radius:30% 30% 50% 50%;}
-#submit-field{border-radius:20% 20% 60% 60%;}
-#comment-div{display:flex;justify-content:center;}
+/*...............items............*/
+
 legend{color:#9f0;}
-textarea{color:#f70;border-radius:8%;padding:4vmin;height:auto !important;min-width:80% !important;}
-select,textarea{
+
+#start-register,#manga,#sex,#submit-field{
+  border:none;
+  border-right: solid hsl(20,100%,50%) .28vmin;
+  border-bottom:solid hsl(20,100%,50%) .28vmin;
+  box-shadow:1.2vmin 1.2vmin 20px hsl(20,100%,30%);
+  border-radius: 15%;
+  background:rgba(0,0,0,0.6);
+  padding:5% 3%;
+  margin:8vh auto;
+}
+
+#start-register{border-radius:15% 30% 100% 20%;}
+
+#manga{}
+table{}
+tr,#start-register{text-align:left;}
+td{text-align:center;width:50%;}
+img{max-width:25%;height:auto;float:right;}
+
+#end-register{} 
+#sex{
+  padding:1vh 2vw;
+  border-radius:30% 30% 50% 50%;
+}
+#submit-field{
+  border-radius:20% 20% 60% 60%;
+}
+#comment{
+  color:#f70;
+  border-radius:8%;
+  padding:4vmin;
+  height:auto !important;
+  width:80%;
+  margin:auto;
+}
+/*............,.....inputs..................*/
+
+select,#comment{
   background:rgba(125,255,0,.05);
   border:none;
   border-top:solid #7f0;
   border-bottom:solid #7f0;
   border-radius:30%;
   height:5vmin;
+  min-width:25%;
+  font-size:3vmin;
 }
+
+select{border-top:none;padding:0 0 0 5%;}
+
 input{
   background-color:rgba(125,255,0,.05) !important;
   color:#f70;
@@ -72,17 +87,16 @@ input{
 input::placeholder,textarea::placeholder,select{
   color:#0bf;
   opacity:0.9;
-  text-align:center;
   font-size:2.5vmin;
 }
-input:focus,textarea:focus{
+input:focus,textarea:focus,select:focus{
   outline:none;
   background-color:rgba(0,170,255,.2) !important;
   border-top:solid #7f0;
 }
 input[type="email"]{
   background:url("../images/email.png") .8vmin/4vmin no-repeat ;
-  width:90%;
+  width:95%;
   min-width:52vmin;
 }
 input[type="password"]{
@@ -92,23 +106,25 @@ input[type="password"]{
 }
 input[type="text"]{
   background:url("../images/username.png") .8vmin/4vmin no-repeat ;
-  width:60%;
+  width:70%;
   min-width:36vmin;
 }
 input[type="number"]{
   background:url("../images/phone.png") .8vmin/4vmin no-repeat ;
-  width:40%;
+  width:60%;
   min-width:26vmin;
 }
 input[type="date"]{
   background:url("../images/date.png") .8vmin/4vmin no-repeat ;
-  width:20%;
+  width:50%;
   min-width:16vmin;
 }
 input[type="radio"],input[type="checkbox"]{
   width:3vmin;
   height:3vmin;
 }
+/*.................submit....................*/
+
 #submit{
   background:rgba(0,155,255,.5);
   color:hsl(15,100%,55%);
@@ -161,9 +177,14 @@ input[type="radio"],input[type="checkbox"]{
   60%{bottom:.8em;left:-1em;}
   80%{bottom:0.2em;left:-0.25em;}
 }
-@media only screen and (orientation:portrait){
-  body{background-image:url("../images/map-portrait.jpg");}
-  form{flex-direction:column !important;}
-  #s1-div,#sex{width:90vw;min-width:65vmin;}
-  #manga{margin:0;}
+@media only screen and (orientation:landscape){
+  body{
+    background-image:url("../images/map-landscape.jpg");
+  }
+  form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(30%,auto));
+    grid-gap:2.5%;
+    align-items:center;
+  }
 }
