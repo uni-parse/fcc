@@ -1,7 +1,7 @@
+*{font-size:22.5vmin;}
 body {
   color: lightGray;
   font-family: rosemary, monospace;
-  font-size:2.5vmin;
   background:hsl(340,80%,40%) url("../images/pew.jpg") 0/cover fixed no-repeat;
 }
 h2,
