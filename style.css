@@ -142,7 +142,7 @@ a:nth-last-of-type(2){margin:0 1rem;}
 #skills article,#coding-table section{display:grid;grid-template:auto/3rem auto;align-items:center;}
 #skills article{grid-template-columns:1fr auto;background:rgba(25,25,25,.6);border-radius:10% 0 7% 10%;padding:1%;margin:1%;}
 #coding-table{display:grid;grid-template:repeat(4,auto)/1fr;grid-gap:.5rem;}
-article p{transform:rotate(-90deg);align-self:center;justify-self:center;}
+article p{font-weight:300;font-size:.9rem;transform:rotate(-90deg);align-self:center;justify-self:center;}
 p.span-p{transform:rotate(-35deg);}
 tr{display:grid;grid-template:auto/9rem 3.5rem 45vw;text-align:left;}
 
