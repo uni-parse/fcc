@@ -8,6 +8,69 @@ body {
   color: lightGray;
   background:#222 url("../images/s21-p.jpeg") 0/cover fixed no-repeat;
 }
+/*.................container...............*/
+
+main {
+  margin: 50vh 0 20vh 0;
+  display:flex;
+  flex-direction:column;
+}
+#s1,#s2{
+	background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 4vmin 2vmin 30px 2.5vmin rgba(0, 0, 0, 0.7);
+  border-radius: 10%;
+  padding:10vmin 2vmin;
+  margin:15% auto;
+}
+/*...............s1...............*/
+
+#old-price{color:#f40;}
+#discount{color:#0af;}
+#new-price{color:#af0;}
+#video {
+  width: 90vw;
+  height: 50.625vw;
+  margin:auto;
+  border:none;
+  border-radius: 5%;
+  padding: .5vmin;
+  background: linear-gradient(var(--deg),transparent,#f70,transparent/*,#7f0*/);
+  animation: video 8s 3s ease infinite;
+}
+@keyframes video {
+  12.5% {--deg: 45deg;}
+  25% {--deg: 90deg;}
+  37.5% {--deg: 135deg;}
+  50% {--deg: 180deg;}
+  62.5% {--deg: 225deg;}
+  75% {--deg: 270deg;}
+  87.5% {--deg: 315deg;}
+  100% {--deg: 360deg;}
+}
+/*............s2.............*/
+
+#email{
+	border:none;
+	border-bottom:solid #7f0;
+	border-radius:10% 10% 20% 10%;
+	padding:2vmin 2vmin 2vmin 10vmin;
+	color:#f70;
+	font-size:4vmin;
+	background:rgba(0,0,0,.2) url("../images/email.png") .2vmin/4vmin no-repeat;
+}
+#email:focus{
+	outline:none;
+	background-color:rgba(0,170,255,.2);
+	border-right:solid #7f0;
+}
+input[type="email"]::placeholder{font-size:3vmin;}
+#ditailes{
+	margin:20vmin auto;
+	text-align:justify;
+	width:80%;
+}
+/*.................nav bar....................*/
+
 #header {
   display: flex;
   flex-direction: row-reverse;
@@ -42,64 +105,11 @@ figcaption {
   left: -10000px;
   opacity: 0;
 }
-main {
-  margin: 70vh 0 20vh 0;
-  display:flex;
-  flex-direction:column;
-}
-#s1,#s2{
-	background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 30px 1vmin rgba(0, 0, 0, 0.5);
-  border-radius: 10%;
-  padding:10vmin 2vmin;
-}
-#s2{margin-top: 20vh auto;}
-#old-price{color:#f40;}
-#discount{color:#0af;}
-#new-price{color:#af0;}
-#video {
-  width: 90vw;
-  height: 50.625vw;
-  margin:auto;
-  border:none;
-  border-radius: 5%;
-  padding: .5vmin;
-  background: linear-gradient(var(--deg),transparent,#f70,transparent/*,#7f0*/);
-  animation: video 1.8s 3s ease infinite;
-}
-@keyframes video {
-  12.5% {--deg: 45deg;}
-  25% {--deg: 90deg;}
-  37.5% {--deg: 135deg;}
-  50% {--deg: 180deg;}
-  62.5% {--deg: 225deg;}
-  75% {--deg: 270deg;}
-  87.5% {--deg: 315deg;}
-  100% {--deg: 360deg;}
-}
-#email{
-	border:none;
-	border-bottom:solid #7f0;
-	border-radius:10% 10% 20% 10%;
-	padding:2vmin 2vmin 2vmin 10vmin;
-	color:#f70;
-	font-size:4vmin;
-	background:rgba(0,0,0,.2) url("../images/email.png") .2vmin/4vmin no-repeat;
-}
-#email:focus{
-	outline:none;
-	background-color:rgba(0,170,255,.2);
-	border-right:solid #7f0;
-}
-input[type="email"]::placeholder{font-size:3vmin;}
-#ditailes{
-	margin:20vmin auto;
-	text-align:justify;
-	width:80%;
-}
+/*................media query................*/
 @media only screen and (orientation:landscape) {
 	body{background-image:url("../images/s21-l.jpeg");}
 	main{flex-direction:row;justify-content:space-between;align-items:center;}
-  #video{width: 45vw !important;height:25.31vw !important;}
-  #s1{margin-right:5%;padding:4%}
+  #video{width: 45vw !important;height:25.31vw !important;margin-top:15vh;}
+  #s1,#s2{margin:0;}
+  #s1{margin-right:5%;padding:4%;align-self:stretch;}
 }

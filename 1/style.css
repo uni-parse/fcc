@@ -1,16 +1,17 @@
 :root {
 }
+html{
+	font-size:3.5vmin;
+}
 body {
   text-align: center;
   font-family: rosemary,monospace;
   color: lightGray;
-  background:#222 url("../images/joseph.jpg") fixed no-repeat;
-  background-size:cover;
-  font-size:4vmin;
+  background:#222 url("../images/joseph.jpg") 0/cover fixed no-repeat;
 }
 #tribute-info {
   text-align: justify;
-  width: 85%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
   margin: auto;
@@ -32,7 +33,6 @@ a:visited {
   width: 30vmin;
 }
 #image-div {
-  background: ;
   width: 30vmin;
   height: 30vmin;
   margin:25vh auto;
@@ -103,4 +103,8 @@ a:visited {
     bottom: 1.1vmin;
     transform: scaley(1.2);
   }
+}
+footer{margin-top:30vh;}
+@media only screen and (orientation:landscape){
+	body{background-attachment:scroll;}
 }

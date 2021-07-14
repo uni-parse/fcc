@@ -1,14 +1,14 @@
 *{box-sizing:border-box;}
+html{font-size:4vmin !important;}
 body {
   font-family: rosemary, monospace;
   background:#222 url("../images/map-portrait.jpg") 0/cover fixed no-repeat;
   color: lightgray;
   text-align:center;
-  font-size:4vmin;
 }
 /*...........container..........*/
 form {
-  background: repeating-linear-gradient(0deg,
+  background: repeating-linear-gradient(45deg,
     rgba(0,155,255,.1) 0vmin,transparent 5vmin,
     /*transparent 5vmin,rgba(255,70,0,.1) 10vmin,
     rgba(255,70,0,.1) 10vmin,transparent 15vmin,*/
@@ -17,7 +17,7 @@ form {
     transparent 15vmin,rgba(0,155,255,.1) 20vmin) 0/cover repeat-y;
   border-radius: 5%;
   margin:30vh auto;
-  animation: form 10s 5s ease 1;
+  animation: form 10s 5s ease 0;
 }
 @keyframes form{50%{background-position:0 200px;}
 }
@@ -48,8 +48,10 @@ img{max-width:25%;height:auto;float:right;}
 #sex{
   padding:1vh 2vw;
   border-radius:30% 30% 50% 50%;
+  margin-bottom:0;
 }
 #submit-field{
+	margin-top:2vh;
   border-radius:20% 20% 60% 60%;
 }
 #comment{

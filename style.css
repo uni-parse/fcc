@@ -1,55 +1,81 @@
-html{font-size:2vmin;}
-*{font-size:2vmin:}
+*{box-sizing:;borde:solid 1px;}
+html{font-size:3vmin;}
 body{
-  background-color:#444;
+  /*background:linear-gradient(90deg,#333,#444,#333);*/
+  background:#333 url("images/map-portrait.jpg") 0/cover fixed no-repeat;
   Color:lightgray;
   margin:0px;
   text-align:center;
-  text-family:rosemary,monospace;
+  font-family:rosemary,monospace;
 }
+/*.............header.............*/
+
 #welcome-section{
-  width:100%;
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
 }
-#headdiv{}
-#h1{
+#welcome-div{
+  display:grid;
+  grid-template-columns:2.5fr 1fr;
+}
+#welcome-text{
+	align-self:center;
+	justify-self:center;
   line-height:2.4rem;
   position:relative;
   left:-70vw;
   filter:blur(20px);
-  animation:h1 4s 2.5s forwards ease-out;
+  animation:welcome 4s 1.5s forwards ease-out 1;
 }
-@keyframes h1{
-  100%{left:0px;filter:blur(0px);}
-}
-#headimg{
-  float:right;
-  width:30vw;
+#welcome-img{
+	width:100%;
   position:relative;
-  animation:headimg 4s 2.5s forwards ease-out;
-  right:-30vw;
+  top:38vh;
   filter:blur(20px);
+  opacity:0;
+  animation:welcome 4s 1.5s forwards ease-out 1;
 }
-@keyframes headimg{
-  100%{right:0px;filter:blur(0px);}
+#hr{
+	height:3vmin;
+	background:linear-gradient(90deg,#444,#ccc);
+	border-radius:0 0 5% 100%;
+	position:relative;
+	top:38vh;
+  filter:blur(20px);
+  opacity:0;
+	animation:welcome 4s 1.5s forwards ease-out 1;
 }
-hr{clear:right;}
-.project{width:80vw;height:128vw;}
-@media only screen and (orientation:landscape) and (min-width:992px){
-  .project{width:30vw;height:48vw;}
+@keyframes welcome{
+  100%{left:0;top:0;opacity:1;filter:blur(0);}
 }
-@media only screen and (orientation:landscape) and (max-width:992px){
-  .project{width:45vw;height:72vw;}
+/*................main..............*/
+
+.project-div{
+	padding:.5%;
+	width:95%;
+	margin:10vmin auto;
+	background:repeating-linear-gradient(45deg,
+	  #fff 0,transparent 12%,
+	  transparent 12%,#000 24%);
+	border-radius:4%;
+	display:grid;
+	grid-template-column:1fr;
+	justify-items:stretch;
+	align-items:stretch;
 }
-@media only screen and (orientation:portrait) and (max-width:992px){
-  .project{width:95vw;height:152vw;}
+.project{border-radius:3%;height:50vw;border:none;}
+a:only-of-type{
+	background:#555;
+	color:#7f0;
+	border-radius:40%;
 }
+/*................nav-bar.............*/
+
 #navbar{
   position:fixed;
-  top:0px;
+  top:-5vmin;
   right:5vmin;
   display:flex;
   flex-direction:row-reverse;
@@ -57,27 +83,34 @@ hr{clear:right;}
   height:5vmin;
   background-color:rgba(0,0,0,0.35);
   border-radius:20%;
+  padding:0 0 0 .5rem;
+  opacity:0;
+  filter:blur(10px);
+  animation:nav 4.5s 1.5s forwards ease-out 1;
 }
+@keyframes nav{100%{top:0;opacity:1;filter:blur(0)}}
 a{
   text-decoration:none;
   color:lightgray;
-  font-size:1.2vmin;
-  margin:0.5vmin;
+  margin:.1rem;
+  font-size:.85rem;
 }
-.social-media{
+a:nth-last-of-type(2){margin:0 1rem;}
+.social-media-img{
   max-height:4vmin;
   width:auto;
 }
-.navimg{
+.nav-img{
   Position:fixed;
   right:0px;
   top:0px;
   background-color:rgba(0,0,0,0);
   height:5vmin;
+  opacity:0;
 }
-#img1{animation:img1 5s 1s infinite linear;}
-#img2{animation:img2 5s 1s infinite linear;}
-#img3{animation:img3 5s 1s infinite linear;}
+#img1{animation:img1 5s 1s linear infinite;}
+#img2{animation:img2 5s 1s linear infinite;}
+#img3{animation:img3 5s 1s linear infinite;}
 @keyframes img1{
   0%{opacity:1;}
   12.5%{opacity:0.2;}
@@ -102,4 +135,33 @@ a{
   50%{opacity:1;}
   62.5%{opacity:0.2;}
   100%{opacity:0%;}
+}
+/*...............skills.............*/
+
+#skills{display:grid;grid-template:repeat(3,auto)/1fr;grid-gap:1rem;margin:30vh auto;}
+#skills article,#coding-table section{display:grid;grid-template:auto/3rem auto;align-items:center;}
+#skills article{grid-template-columns:1fr auto;background:rgba(25,25,25,.6);border-radius:10% 0 7% 10%;padding:1%;margin:1%;}
+#coding-table{display:grid;grid-template:repeat(4,auto)/1fr;grid-gap:.5rem;}
+article p{transform:rotate(-90deg);font-weight:bold;align-self:center;justify-self:center;}
+p.span-p{transform:rotate(-35deg);}
+tr{display:grid;grid-template:auto/7rem 3.5rem 45vw;text-align:left;}
+
+td div{height:95%;border-bottom:solid;border-right:solid;border-radius:70% 5% 100% 5%;}
+div div{background:rgba(255,0,0,.6);width:5%;}
+#html,#css{width:100%;}
+#html5{width:81%;}
+#css3{width:77%;}
+#js-e5{width:56%;}
+#photoshop{width:38%;}
+/*..........media query...........*/
+
+@media only screen and (orientation:landscape) and (min-width:700px){
+  body{background-image:url("images/map-landscape.jpg");}
+  .project-tile{display:grid;grid-template-columns:1fr 1fr;}
+  .project-div{margin:2vmin auto;}
+  .project{height:55vw;}
+}
+@media only screen and (orientation:landscape) and (min-width:1300px){
+  .project-tile{grid-template-columns:repeat(4,1fr);}
+  .project{height:35vw;}
 }
