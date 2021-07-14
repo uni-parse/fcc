@@ -144,7 +144,7 @@ a:nth-last-of-type(2){margin:0 1rem;}
 #coding-table{display:grid;grid-template:repeat(4,auto)/1fr;grid-gap:.5rem;}
 article p{font-weight:300;font-size:.9rem;transform:rotate(-90deg);align-self:center;justify-self:center;}
 p.span-p{transform:rotate(-35deg);}
-tr{display:grid;grid-template:auto/9rem 3.5rem 45vw;text-align:left;}
+tr{display:grid;grid-template:auto/9rem 3.5rem 40vw;text-align:left;}
 
 td div{height:95%;border-bottom:solid;border-right:solid;border-radius:70% 5% 100% 5%;}
 div div{background:rgba(255,0,0,.6);width:5%;}
