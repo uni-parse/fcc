@@ -159,7 +159,7 @@ div div{background:rgba(255,0,0,.6);width:4%;}
   .project-div{margin:2vmin auto;}
   .project{height:55vw;}
   #skills{width:75%;}
-  tr{grid-template-columns:8rem 3.5rem 30vw;}
+  tr{grid-template-columns:9rem 3.5rem 30vw;}
 }
 @media only screen and (orientation:landscape) and (min-width:1300px){
   .project-tile{grid-template-columns:repeat(4,1fr);}
