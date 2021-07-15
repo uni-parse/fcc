@@ -86,9 +86,8 @@ a:only-of-type{
   padding:0 0 0 .5rem;
   opacity:0;
   filter:blur(10px);
-  animation:nav 4.5s 1.5s forwards ease-out 1;
+  animation:welcome 4.5s 1.5s forwards ease-out 1;
 }
-@keyframes nav{100%{top:0;opacity:1;filter:blur(0)}}
 a{
   text-decoration:none;
   color:lightgray;
@@ -140,14 +139,14 @@ a:nth-last-of-type(2){margin:0 1rem;}
 
 #skills{display:grid;grid-template:repeat(3,auto)/1fr;grid-gap:1rem;margin:30vh auto;}
 #skills article,#coding-table section{display:grid;grid-template:auto/3rem auto;align-items:center;}
-#skills article{grid-template-columns:1fr auto;background:rgba(25,25,25,.6);border-radius:10% 0 7% 10%;padding:1%;margin:1%;}
+#skills article{grid-template-columns:auto 1fr;background:rgba(25,25,25,.6);border-radius:10% 0 7% 10%;padding:1%;margin:1%;}
 #coding-table{display:grid;grid-template:repeat(4,auto)/1fr;grid-gap:.5rem;}
-article p{font-weight:300;font-size:.9rem;transform:rotate(-90deg);align-self:center;justify-self:center;}
-p.span-p{transform:rotate(-35deg);}
-tr{display:grid;grid-template:auto/9rem 3.5rem 40vw;text-align:left;}
+article p{writing-mode:vertical-rl;align-self:center;justify-self:center;}
+p.span-p{transform:rotate(-20deg);}
+tr{display:grid;grid-template:auto/7rem 3.5rem 1fr;text-align:left;}
 
 td div{height:95%;border-bottom:solid;border-right:solid;border-radius:70% 5% 100% 5%;}
-div div{background:rgba(255,0,0,.6);width:5%;}
+div div{background:rgba(255,0,0,.6);width:4%;}
 #html,#css{width:100%;}
 #html5{width:81%;}
 #css3{width:77%;}
@@ -160,6 +159,7 @@ div div{background:rgba(255,0,0,.6);width:5%;}
   .project-tile{display:grid;grid-template-columns:1fr 1fr;}
   .project-div{margin:2vmin auto;}
   .project{height:55vw;}
+  #skills{width:70%;}
 }
 @media only screen and (orientation:landscape) and (min-width:1300px){
   .project-tile{grid-template-columns:repeat(4,1fr);}
