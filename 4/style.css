@@ -1,4 +1,4 @@
-html{font-size:3vmin;}
+html{font-size:;}
 body {
   color: lightGray;
   font-family: rosemary, monospace;
@@ -43,13 +43,15 @@ nav {
   margin:;
   text-align: center;
   line-height:5vmin;
+  font-size:3vmin;
 }
 a {
-	text-decoration:none;
-	background:rgba(0,0,0,.1);
-	border-radius:100px;
-	border-bottom:solid #f0a;
-	border-top:solid #f0a;
+  text-decoration:none;
+  background:rgba(0,0,0,.1);
+  border-radius:100px;
+  border-bottom:solid #f0a;
+  border-top:solid #f0a;
+  font-size:3vmin;
 }
 a:link {
   color: #0bf;
