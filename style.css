@@ -1,7 +1,7 @@
 *{box-sizing:;border:;}
 html{font-size:3vmin;}
 @font-face{
-  font-family:"My First Family";
+  font-family:Myfont;
   src="rosemary.ttf";
 }
 body{
@@ -10,7 +10,7 @@ body{
   Color:lightgray;
   margin:0px;
   text-align:center;
-  font-family:"My First Family", monospace;
+  font-family:Myfont, monospace;
 }
 /*.............header.............*/
 
