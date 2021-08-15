@@ -1,8 +1,8 @@
 *{box-sizing:;border:;}
 html{font-size:3vmin;}
 @font-face{
-  font-family:Myfont;
-  src="rosemary.ttf";
+  font-family:"My Font";
+  src: url("rosemary.ttf");
 }
 body{
   /*background:linear-gradient(90deg,#333,#444,#333);*/
@@ -10,7 +10,7 @@ body{
   Color:lightgray;
   margin:0px;
   text-align:center;
-  font-family:Myfont, monospace;
+  font-family:"My Font", monospace;
 }
 /*.............header.............*/
 
