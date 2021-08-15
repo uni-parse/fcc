@@ -2,7 +2,7 @@
 html{font-size:3vmin;}
 @font-face{
   font-family:"My First Family";
-  src="Rosemary-Regular.ttf";
+  src="rosemary.ttf";
 }
 body{
   /*background:linear-gradient(90deg,#333,#444,#333);*/
