@@ -1,12 +1,16 @@
 *{box-sizing:;border:;}
 html{font-size:3vmin;}
+@font-face{
+  font-family:"My First Family";
+  src="Rosemary-Regular.ttf";
+}
 body{
   /*background:linear-gradient(90deg,#333,#444,#333);*/
   background:#333 url("images/map-portrait.jpg") 0/cover fixed no-repeat;
   Color:lightgray;
   margin:0px;
   text-align:center;
-  font-family:rosemary,monospace;
+  font-family:"My First Family", rosemary, monospace;
 }
 /*.............header.............*/
 
