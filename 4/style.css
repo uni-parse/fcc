@@ -27,7 +27,8 @@ pre {
   border-radius: 5%;
   color: hsl(95, 100%, 50%);
   margin: 0 2vmin;
-  white-space: pre-wrap;
+  white-space: pre;
+  overflow:auto;
   padding: 1vmin;
   border: solid .1vmin black;
   font-size:.8rem;
