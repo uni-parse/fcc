@@ -34,7 +34,7 @@ body{
   animation:welcome 4s 1.5s forwards ease-out 1;
 }
 #welcome-img{
-	width:100%;
+	width:100%; height:100%;
   position:relative;
   top:38vh;
   filter:blur(20px);
